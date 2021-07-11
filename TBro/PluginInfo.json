@@ -44,21 +44,17 @@
         "Dependencies": [
             "Permissions"
         ],
-        "Description": "TBro-Shop, Currency & Kits",
+        "Description": "Shop, Currency & Kits",
         "FileList": [
             "ArkShop.dll",
             "ArkShop.pdb",
             "config.json",
-            "config示例.json",
-            "ExcludeEngrams.txt",
-            "PluginInfo.json",
-            "命令文档.txt",
-            "更新日志.txt"
+            "PluginInfo.json"
         ],
-        "FullName": "TBro Ark Shop",
-        "MinApiVersion": 3.4,
+        "FullName": "Ark Shop",
+        "MinApiVersion": 3.0,
         "ResourceId": 14,
-        "Version": 2.861
+        "Version": 2.8
     },
     "ArkShop(Chinese)": {
         "Dependencies": [
