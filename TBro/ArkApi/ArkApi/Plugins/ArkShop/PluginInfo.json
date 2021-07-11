@@ -1,0 +1,10 @@
+{
+  "FullName":"TBro Ark Shop",
+  "Description":"TBro-Shop, Currency & Kits",
+  "Version":2.861,
+  "MinApiVersion":3.4,
+  "ResourceId":14,
+  "Dependencies":[
+    "Permissions"
+  ]
+}

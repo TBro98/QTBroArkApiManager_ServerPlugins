@@ -1,0 +1,267 @@
+{
+    "AZEventManager": {
+        "Dependencies": [
+            "ArkShop"
+        ],
+        "Description": "Automatically run custom events.",
+        "FileList": [
+            "AZEventManager.dll",
+            "config.json",
+            "PluginInfo.json",
+            "使用说明.txt"
+        ],
+        "FullName": "Event Manager",
+        "MinApiVersion": 3.2,
+        "ResourceId": 33,
+        "Version": 2.6
+    },
+    "ArkAdvert": {
+        "Description": "Timed chat messages",
+        "FileList": [
+            "ArkAdvert.dll",
+            "config.json",
+            "PluginInfo.json",
+            "新建文本文档.txt"
+        ],
+        "FullName": "Advert Messages",
+        "MinApiVersion": 2.3,
+        "ResourceId": 7,
+        "Version": 1.2
+    },
+    "ArkHomes": {
+        "Description": "Home & teleport system for Ark",
+        "FileList": [
+            "ArkHomes.dll",
+            "config.json",
+            "PluginInfo.json"
+        ],
+        "FullName": "Ark Homes",
+        "MinApiVersion": 2.7,
+        "ResourceId": 39,
+        "Version": 1.1
+    },
+    "ArkShop": {
+        "Dependencies": [
+            "Permissions"
+        ],
+        "Description": "TBro-Shop, Currency & Kits",
+        "FileList": [
+            "ArkShop.dll",
+            "ArkShop.pdb",
+            "config.json",
+            "config示例.json",
+            "ExcludeEngrams.txt",
+            "PluginInfo.json",
+            "命令文档.txt",
+            "更新日志.txt"
+        ],
+        "FullName": "TBro Ark Shop",
+        "MinApiVersion": 3.4,
+        "ResourceId": 14,
+        "Version": 2.861
+    },
+    "DeathmatchEvent": {
+        "Dependencies": [
+            "AZEventManager"
+        ],
+        "Description": "DM Event",
+        "FileList": [
+            "DeathmatchEvent.dll",
+            "PluginInfo.json",
+            "TheIsland.json",
+            "使用说明.txt"
+        ],
+        "FullName": "Deathmatch",
+        "MinApiVersion": 3.2,
+        "ResourceId": 34,
+        "Version": 2.6
+    },
+    "ExtendedRcon": {
+        "Description": "Additional RCON commands",
+        "FileList": [
+            "command.txt",
+            "ExtendedRcon.dll",
+            "PluginInfo.json"
+        ],
+        "FullName": "Extended Rcon",
+        "MinApiVersion": 3.2,
+        "Version": 3.2
+    },
+    "KillFeed": {
+        "Description": "Player & Dino Death Logs",
+        "FileList": [
+            "config.json",
+            "KillFeed.dll",
+            "KillFeed.pdb",
+            "PluginInfo.json"
+        ],
+        "FullName": "KillFeed",
+        "MinApiVersion": 2.5,
+        "ResourceId": 18,
+        "Version": 2.3
+    },
+    "Lottery": {
+        "Dependencies": [
+            "ArkShop"
+        ],
+        "Description": "Play Lottery",
+        "FileList": [
+            "config.json",
+            "Lottery.dll",
+            "Lottery.pdb",
+            "PluginInfo.json"
+        ],
+        "FullName": "Lottery",
+        "MinApiVersion": 2.5,
+        "Version": 1.3
+    },
+    "NewPlayerProtection": {
+        "Description": "Gives new players structure protection.",
+        "FileList": [
+            "config.json",
+            "NewPlayerProtection.dll",
+            "NewPlayerProtection.pdb",
+            "PluginInfo.json"
+        ],
+        "FullName": "New Player Protection Plugin",
+        "MinApiVersion": 3.4,
+        "ResourceId": 50,
+        "Version": 1.9
+    },
+    "PVPScheduler": {
+        "Description": "Enable PVP on specific days and hours",
+        "FileList": [
+            "config.json",
+            "PdbConfig.json",
+            "PluginInfo.json",
+            "PVPScheduler.dll",
+            "PVPScheduler.pdb"
+        ],
+        "FullName": "PVP Scheduler",
+        "MinApiVersion": 3.1,
+        "Version": 1.8
+    },
+    "Permissions": {
+        "Description": "Qqun：1002732429",
+        "FileList": [
+            "config.json",
+            "Permissions.dll",
+            "Permissions.pdb",
+            "PluginInfo.json",
+            "命令介绍——TBro.txt"
+        ],
+        "FullName": "Permissions",
+        "MinApiVersion": 3.4,
+        "Version": 1.8
+    },
+    "PlayerList": {
+        "Description": "List all online player character names",
+        "FileList": [
+            "config.json",
+            "PlayerList.dll",
+            "PlayerList.pdb",
+            "PluginInfo.json",
+            "新建文本文档.txt"
+        ],
+        "FullName": "PlayerList",
+        "MinApiVersion": 2.5,
+        "ResourceId": 22,
+        "Version": 1.3
+    },
+    "PluginCrashManager": {
+        "Description": "Automatic save & restart after crash",
+        "FileList": [
+            "config.json",
+            "PdbConfig.json",
+            "PluginCrashManager.dll",
+            "PluginCrashManager.pdb",
+            "PluginInfo.json"
+        ],
+        "FullName": "Plugin Crash Manager",
+        "MinApiVersion": 2.9,
+        "Version": 1.1
+    },
+    "SafeZone": {
+        "Dependencies": [
+            "Permissions"
+        ],
+        "Description": "Create Safe Zones",
+        "FileList": [
+            "config.json",
+            "PluginInfo.json",
+            "SafeZone.dll"
+        ],
+        "FullName": "Safe Zone",
+        "MinApiVersion": 2.6,
+        "ResourceId": 2,
+        "Version": 3.2
+    },
+    "ShopRewards": {
+        "Dependencies": [
+            "ArkShop"
+        ],
+        "Description": "Rewards for killing dinos and players & stats",
+        "FileList": [
+            "config.json",
+            "PluginInfo.json",
+            "ShopRewards.dll",
+            "ShopRewards.pdb"
+        ],
+        "FullName": "Shop Rewards",
+        "MinApiVersion": 3.0,
+        "Version": 1.2
+    },
+    "SocketCrossChat": {
+        "Dependencies": [
+            "Permissions"
+        ],
+        "Description": "TBro Cross Servers Chat",
+        "FileList": [
+            "config.json",
+            "PluginInfo.json",
+            "SocketCrossChat.dll",
+            "说明.txt"
+        ],
+        "FullName": "TBro Cross Chat",
+        "MinApiVersion": 3.4,
+        "ResourceId": 14,
+        "Version": 2.23
+    },
+    "StructuresLimit": {
+        "Description": "Limit the structures of a tribe or a player in the whole map",
+        "FileList": [
+            "commented_config.json",
+            "config.json",
+            "PluginInfo.json",
+            "StructuresLimit.dll",
+            "新建文本文档.txt"
+        ],
+        "FullName": "Structures Limit",
+        "MinApiVersion": 3.2,
+        "Version": 2.5
+    },
+    "UnicodeRcon": {
+        "Description": "Unicode support for RCON",
+        "FileList": [
+            "PdbConfig.json",
+            "PluginInfo.json",
+            "UnicodeRcon.dll",
+            "UnicodeRcon.pdb"
+        ],
+        "FullName": "Unicode Rcon",
+        "MinApiVersion": 2.1,
+        "Version": 1.2
+    },
+    "WeekendRates": {
+        "Description": "Change multiplier's for weekend only",
+        "FileList": [
+            "config.json",
+            "PluginInfo.json",
+            "WeekendRates.dll",
+            "WeekendRates.pdb"
+        ],
+        "FullName": "WeekendRates",
+        "MinApiVersion": 3.1,
+        "Version": 1.4
+    }
+}

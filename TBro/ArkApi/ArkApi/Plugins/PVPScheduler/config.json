@@ -1,0 +1,29 @@
+{  
+   "PVPScheduler":{  
+	  "ServerName":"TBro",
+      "NotifyServer":true,
+      "LogPvpSwitchAtConsole":true,
+	  "ProtectExplosiveMessage":"<RichColor Color=\"1, 0, 0, 1\">现在是PVE时间！</>",
+	  "ProtectPlayersPVPOff":true,
+	  "ProtectDinosPVPOff":false,
+	  "ProtectStructuresPVPOff":true,
+	  "ProtectExplosivesPVPOff":false,
+      "Days":[
+         {  
+            "StartDay":6,
+            "StartHour":0,
+            "EndDay":1,
+			"EndHour":0,
+			"ProtectPlayersPVPOn":false,
+			"ProtectDinosPVPOn":false,
+			"ProtectStructuresPVPOn":false,
+			"ProtectExplosivesPVPOn":false,
+			"PVPEnabledMessage":"<RichColor Color=\"1, 0, 0, 1\">PVP开启！</>",
+			"PVPDisabledMessage":"<RichColor Color=\"0, 1, 0, 1\">PVP结束！</>"
+         }
+      ],
+    "StructureExemptions": [
+     "Blueprint'/Game/PrimalEarth/Structures/C4Charge.C4Charge'"
+    ]
+   }
+}

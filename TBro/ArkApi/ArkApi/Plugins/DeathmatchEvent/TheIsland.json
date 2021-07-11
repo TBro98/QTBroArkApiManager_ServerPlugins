@@ -1,0 +1,236 @@
+﻿{  
+	"PlayerRewards":{  
+    "Enabled":true,
+    "ReceivePoints":100,
+    "AdditionalPointsPercent":0,
+    "LosePointsPercent":0,
+    "NegativePoints":true,
+    "MessageType":"notification",
+    "NotificationDisplayTime":10.0,
+    "NotificationScale":1.3
+	},
+   "Deathmatch":{  
+      "EventName":"大乱斗",
+      "PlayersNeededToStart":2,
+      "JoinMessages":3,
+      "JoinMessageDelaySeconds":60,
+      "StructureProtection":false,
+      "StructureProtectionPosition":[  
+         0,
+         0,
+         0
+      ],
+      "StructureProtectionDistance":30000,
+      "TopNotifications":true,
+      "MovementSpeedAddon":1,
+      "ArkShopPointsEntryFee":0,
+      "ArkShopPointsRewardMin":100,
+      "ArkShopPointsRewardMax":200,
+      "KillOnLoggout":true,
+      "EventMessageColour":[  
+         1.000,
+         0.000,
+         0.000,
+         1
+      ],
+      "Spawns":[  
+         {  
+			"Position" : [268979.625000,271439.906250,-11854.637695]
+         },
+         {  
+			"Position" : [265594.250000,277849.343750,-14263.164063]
+         },
+         {  
+			"Position" : [280568.875000,290974.687500,-14155.962891]
+         },
+         {  
+			"Position" : [281633.187500,282250.031250,-11819.056641]
+         },
+         {  
+			"Position" : [282018.031250,275330.531250,-13965.038086]
+         },
+         {  
+			"Position" : [276477.093750,268474.593750,-14224.110352]
+         },
+         {  
+			"Position" : [280641.281250,261126.812500,-13152.103516]
+         },
+         {  
+			"Position" : [273199.718750,253451.156250,-14124.147461]
+         },
+         {  
+			"Position" : [264551.000000,253218.015625,-14268.790039]
+         },
+         {  
+			"Position" : [282302.687500,267124.906250,-12423.562500]
+         },
+         {  
+			"Position" : [284034.312500,267544.125000,-12205.5039]
+         },
+         {  
+			"Position" : [285210.687500,273920.218750,-11422.003906]
+         },
+         {  
+			"Position" : [282849.031250,278457.218750,-11377.668945]
+         }
+      ],
+      "Equipment":[  
+         {  
+            "HeadBP":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalHelmet.PrimalItemArmor_MetalHelmet'",
+			"TorsoBP":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalShirt.PrimalItemArmor_MetalShirt'",
+            "GlovesBP":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalGloves.PrimalItemArmor_MetalGloves'",
+            "OffhandBP":"",
+            "LegsBP":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalPants.PrimalItemArmor_MetalPants'",
+            "FeetBP":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalBoots.PrimalItemArmor_MetalBoots'",
+            "ExtraArmourPercent":200,
+			"ExtraArmourDurabilityPercent":200,
+			"Items":[
+				
+            ]
+         }
+      ],
+      "Rewards":[  
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalHatchet.PrimalItem_WeaponMetalHatchet'",
+            "QuantityMin":1,
+            "QuantityMax":1,
+            "QualityMin":0,
+            "QualityMax":1,
+            "MinIsBP":0,
+            "MaxIsBP":10,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         },
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalPick.PrimalItem_WeaponMetalPick'",
+            "QuantityMin":1,
+            "QuantityMax":1,
+            "QualityMin":0,
+            "QualityMax":1,
+            "MinIsBP":0,
+            "MaxIsBP":10,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         },
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponBow.PrimalItem_WeaponBow'",
+            "QuantityMin":1,
+            "QuantityMax":1,
+            "QualityMin":0,
+            "QualityMax":1,
+            "MinIsBP":0,
+            "MaxIsBP":10,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         },
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItemAmmo_ArrowStone.PrimalItemAmmo_ArrowStone'",
+            "QuantityMin":1,
+            "QuantityMax":200,
+            "QualityMin":0,
+            "QualityMax":0,
+            "MinIsBP":0,
+            "MaxIsBP":0,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         },
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItemAmmo_ArrowTranq.PrimalItemAmmo_ArrowTranq'",
+            "QuantityMin":1,
+            "QuantityMax":100,
+            "QualityMin":0,
+            "QualityMax":0,
+            "MinIsBP":0,
+            "MaxIsBP":0,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         },
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Consumables/PrimalItemConsumable_Narcotic.PrimalItemConsumable_Narcotic'",
+            "QuantityMin":1,
+            "QuantityMax":100,
+            "QualityMin":0,
+            "QualityMax":0,
+            "MinIsBP":0,
+            "MaxIsBP":0,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         },
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItemAmmo_TranqDart.PrimalItemAmmo_TranqDart'",
+            "QuantityMin":1,
+            "QuantityMax":50,
+            "QualityMin":0,
+            "QualityMax":0,
+            "MinIsBP":0,
+            "MaxIsBP":0,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         },
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItemAmmo_SimpleRifleBullet.PrimalItemAmmo_SimpleRifleBullet'",
+            "QuantityMin":1,
+            "QuantityMax":50,
+            "QualityMin":0,
+            "QualityMax":0,
+            "MinIsBP":0,
+            "MaxIsBP":0,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         },
+         {  
+            "Blueprint":"Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_MetalIngot.PrimalItemResource_MetalIngot'",
+            "QuantityMin":25,
+            "QuantityMax":200,
+            "QualityMin":0,
+            "QualityMax":0,
+            "MinIsBP":0,
+            "MaxIsBP":0,
+		    "ExtraDmgPercent":0,
+		    "ExtraAmmoPercent":0,
+		    "ExtraArmourPercent":0,
+		    "ExtraDurabilityPercent":0
+         }
+      ],
+      "Messages":[  
+         "<RichColor Color=\"0, 1, 0, 1\">[活动] {} 开启倒计时 {} {}, 参加指令 {}\n</>",
+         "分钟",
+         "分钟",
+         "秒",
+         "<RichColor Color=\"0, 1, 0, 1\">[活动] {} 终止，最少 {} 玩家</>",
+         "<RichColor Color=\"0, 1, 0, 1\">[活动] {} 30秒后开始!</>",
+         "<RichColor Color=\"1, 0, 0, 1\">[活动] {} 开始。杀，或被杀!</>",
+         "<RichColor Color=\"0, 1, 0, 1\">[活动] {} 赢得 {} 活动!</>",
+		 "敌军还有30秒到达战场，做好准备!本活动由方舟非官方交流网二师兄提供支持。",
+		 "[{}] {} 玩家存活",
+		 "匹配中"
+      ]
+   },
+   "Messages":{
+	"Sender":"排行",
+    "LostPoints":"You have lost {} points",
+    "MyStats":"Player kills count: {0}\nDeaths count: {1}\nWild dino kills count: {2}\nTamed dino kills count: {3}",
+    "StatsFormat":"{0}) {1} {2} {3}\n",
+    "StatsFormatPlayer":"Format: Name Player kills Deaths count\n{0}",
+    "StatsFormatDino":"Format: Name Tamed dino kills Wild dino kills\n{0}",
+    "StatsUsage":"说明：/ph查看排行，/zj查看自己战绩",
+    "MyStatsCmd":"/zj",
+    "ShowLeaderboardCmd":"/stats"
+   }
+}

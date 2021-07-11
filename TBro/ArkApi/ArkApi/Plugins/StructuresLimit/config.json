@@ -1,0 +1,41 @@
+{
+  "General": {
+    "IgnoreAdmin": false, 
+    "MaxAmount": 8000,
+    "NotificationDisplayTime": 4,
+    "NotificationScale": 1.3
+  },
+  "Structures": {
+    "Blueprint'/Game/ScorchedEarth/Structures/Adobe/Blueprints/SM_AdobeFloor_BP.SM_AdobeFloor_BP'": {
+      "Name": "Adobe Foundation",
+      "Count": 5
+    },
+    "Blueprint'/Game/PrimalEarth/Structures/Stone/Stone_Floor/Floor_Stone.Floor_Stone'": {
+      "Name": "Stone Foundation",
+      "Count": 5
+    },
+    "Blueprint'/Game/Mods/StructuresPlusMod/Structures/Foundations/Square/Wood/BP_Foundation_Wood.BP_Foundation_Wood'": {
+      "Name": "SS Wood Foundation",
+      "Count": 5
+    }
+  },
+  "Messages": {
+    "Sender": "Structure Limits:",
+    "InvitingMergeFail": "Can't merge with this tribe, the tribe has too many structures!",
+    "InvitedMergeFail": "The tribe you are trying to merge has too many structures combined with yours!",
+    "InvitingTribeFail": "The player you are trying to invite has too many structures combined with yours!",
+    "InvitedPlayerFail": "The tribe you are trying to join have has too structures combined with yours!",
+    "ReachLimit": "You have reached your limit of that structure or the global structure limit!",
+    "ShowLimitsCmd": "/ShowLimits",
+    "ShowLimitMsg": "{}: {}/{}\n",
+    "TotalLimitMsg": "Total Structures: {}/{}",
+    "ShowLimitsType": "Notification",
+    "NotificationColor": {
+      "Red": 1,
+      "Green": 0,
+      "Blue": 0.5
+    },
+    "ShowLimitsDisplayTime": 10,
+    "ShowLimitsScale": 1.5
+  }
+}

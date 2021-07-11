@@ -1,0 +1,40 @@
+{  
+   "EventManager":{  
+      "ServerName":"方舟非官方交流网",
+      "JoinCommand":"/join",
+      "LeaveCommand":"/leave",
+      "AdminStartEventConsoleCommand":"startevent",
+	  "EventStartAuto":true,
+      "EventStartMinuteMin":5,
+      "EventStartMinuteMax":5,
+	  "StartEventOnServerStart":true,
+      "DebugLogToConsole":true,
+	  "Schedules":[
+         {  
+			"EventName":"大乱斗",
+            "StartDay":0,
+            "StartHour":0
+         }
+      ],
+	  "AllowedCommands":[
+		 "/players",
+		 "/pm",
+		 "/r"
+	  ],
+      "Messages":[  
+         "<RichColor Color=\"0, 1, 0, 1\">玩家 {} 加入了 {} 活动!</>",
+         "<RichColor Color=\"0, 1, 0, 1\">聊天框输入 /leave 退出活动</>",
+         "<RichColor Color=\"0, 1, 0, 1\">你已经在 {} 活动中了!</>",
+         "<RichColor Color=\"0, 1, 0, 1\">玩家 {} 退出 {} 活动!</>",
+         "<RichColor Color=\"0, 1, 0, 1\">你已退出 {} 活动!</>",
+         "<RichColor Color=\"0, 1, 0, 1\">你未加入 {} 活动!</>",
+         "<RichColor Color=\"0, 1, 0, 1\">{} 活动开始!</>",
+         "<RichColor Color=\"1, 0, 0, 1\">{} 活动进行中!</>",
+		 "<RichColor Color=\"1, 0, 0, 1\">死亡后不能加入活动!</>",
+		 "<RichColor Color=\"1, 0, 0, 1\">Inventory not found.</>",
+		 "<RichColor Color=\"0, 1, 0, 1\">清空身上所有物品! ({})</>",
+		 "<RichColor Color=\"1, 0, 0, 1\">{} 活动需要收取 {} 你拥有 {}.</>",
+		 "<RichColor Color=\"1, 0, 0, 1\">{} 被禁止加入活动.</>"
+      ]
+   }
+}

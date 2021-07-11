@@ -1,0 +1,25 @@
+﻿{
+	"Interval": 300,
+	"WinPercentage": 75,
+	"AnnounceBuy": true,
+	"AutoLottery": {
+		"enabled": true,
+		"CreatingInterval": 60,
+		"TicketPrice" : 100,
+		"MinutesToRun": 5,
+		"MinPlayers": 1
+	},
+	"Messages": {
+		"prefix": "彩票系统",
+		"StillOpen": "<RichColor Color=\"0,136,255,1\">抽奖系统将于{} 分钟后开启 使用 /抽奖或者/CJ  参与抽奖</>",
+		"WinnerMessage": "<RichColor Color=\"255,0,0,1\">恭喜玩家 {} 成功拿下奖金</>",
+		"NotEnoughPlayers": "没有足够的玩家加入抽奖 中止......",
+		"AlreadyRunning": "抽奖已经开始了",
+		"Started": "<RichColor Color=\"255,255,0,1\">抽奖已经准备开始了，抽奖消耗 {} 金币。 使用 /抽奖或者/CJ</>",
+		"AlreadyBought": "您已经参与过抽奖了",
+		"Rolled": "<RichColor Color=\"255,0,0,1\">购买成功 {} 祝愿您中奖</>",
+		"NotEnoughPoints": "<RichColor Color=\"255,0,0,1\">您没有足够的金币参与抽奖</>",
+		"NotRunning": "目前没有抽奖系统运行",
+		"BuyAnnouncement": "{} 参与了抽奖"
+	}
+}

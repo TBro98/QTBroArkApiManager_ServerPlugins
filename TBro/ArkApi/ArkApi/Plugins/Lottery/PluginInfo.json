@@ -1,0 +1,9 @@
+{
+  "FullName":"Lottery",
+  "Description":"Play Lottery",
+  "Version":1.3,
+  "MinApiVersion":2.5,
+  "Dependencies": [
+	"ArkShop"
+  ]
+}

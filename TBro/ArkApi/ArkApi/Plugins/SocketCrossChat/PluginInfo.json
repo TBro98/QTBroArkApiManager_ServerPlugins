@@ -1,0 +1,10 @@
+{
+  "FullName":"TBro Cross Chat",
+  "Description":"TBro Cross Servers Chat",
+  "Version":2.23,
+  "MinApiVersion":3.4,
+  "ResourceId":14,
+  "Dependencies":[
+    "Permissions"
+  ]
+}

@@ -1,0 +1,12 @@
+{  
+   "StaffOnly":true,
+   "Messages":[  
+      "ServerNameHere",
+      "<RichColor Color=\"0, 0.8, 0.8, 1\">There is Currently {} Online!</>",
+      "<RichColor Color=\"0, 0.8, 0.8, 1\">{}</>",
+      "/players",
+      "/steamids",
+      "/playerids",
+      "/tribeids"
+   ]
+}

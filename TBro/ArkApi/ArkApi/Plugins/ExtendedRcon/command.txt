@@ -1,0 +1,39 @@
+AddDinoExperience < DinoID1 > < DinoID2 > < >数量 ——将指定数量的经验值添加到恐龙。
+AddExperience < SteamID > <何况> < FromTribeShare > < PreventSharingWithTribe > -增加玩家的指定数量的经验值。
+AddHexagon < SteamID > < >的多 ——添加指定的玩家数量的六角点。
+ClientChat < '信息' > <名称> ——客户端聊天信息发送给每个人。 示例:“clientchat‘你好’管理”。
+DestroyTribeDinos < TribeID > ——删除迪诺斯部落
+DestroyTribeStructures < TribeID > ——删除结构给部落(包括缓存)
+DestroyTribePlayers < TribeID > ——删除玩家角色给部落
+DestroyTribeAll < TribeID > ——删除一切对于给定部落
+DinoColor < DinoID1 > < DinoID2 > <地区> <颜色> ——恐龙的颜色变化。
+FeedDinos < TeamId > ——喂恐龙进入团队的id。
+GetDinoPos < DinoID1 > < DinoID2 >——打印恐龙坐标。
+GetPlayerName < SteamID > ——打印玩家角色名称
+GetPlayerPos < SteamID > ——打印球员的坐标。
+GetTribeIdOfPlayer < SteamID > ——打印部落玩家的蒸汽ID。
+GetTribeLog < TribeID > ——打印部落日志。
+GetTribeName < SteamID > ——打印球员部落的名字
+GiveArmorSet < SteamID > <层> <质量> ——给了玩家一个armorset层和质量上可以找到方舟wiki。
+GiveItem 数量< SteamID > < BlueprintPath > < > <质量> < ForceBlueprint > ——GiveItemNum一样但使用蓝图而不是项id。不需要双引号。 例子:giveitem 123456789蓝图”/游戏/ primalearth / coreblueprints /项目/护甲/皮革/ primalitemarmor_hidegloves。 primalitemarmor_hidegloves“1 1 0
+GiveItemNum 数量< SteamID > < ItemID > < > <质量> < ForceBlueprint > ——给玩家物品。
+GiveItemToAll 质量数量< BlueprintPath > < > < > < ForceBlueprint > ——Giveitem一样但给所有在线玩家的物品。
+KillDino < DinoID1 > < DinoID2 > ——杀死了恐龙。
+KillPlayer < SteamID > ——杀死的球员。
+ListAllPlayerPos ——打印所有玩家坐标在以下格式:< Playername > - < Tribename >, < X > < Y > < Z >
+ListPlayerDinos < SteamID > ——打印球员恐龙在以下格式:< DinoName > - <上>,ID1 = < ID1 >, ID2 = < ID2 >
+RenameCharacter < SteamID > <新名称> ——重命名的球员的名字
+ScriptCommand < SteamID > <命令> ——执行脚本命令。
+SetFacialHair < SteamID > <长度> <时尚> ——改变玩家的面部毛发,柜wiki的更多信息。
+SetHeadHair < SteamID > <长度> <时尚> ——改变球员的头发,柜wiki的更多信息。
+SetDinoPos < DinoID1 > < DinoID2 > < X > < Y > < Z > ——恐龙传送到指定的坐标。
+SetImprintQuality < DinoID1 > < DinoID2 > <质量> 恐龙-设置指定的印质量。 1 = 100%,0.5 = 50%等等。
+SetImprintToPlayer < DinoID1 > < DinoID2 > < SteamID > 在恐龙——改变印记的所有者。
+SetPlayerPos < SteamID > < X > < Y > < Z > ——玩家传送到指定的坐标。
+ShowFrames -返回服务器框架(sfp)
+SpawnDino < SteamID > < BlueprintPath > < DinoLevel > < ForceTame > < X > < Y > < Z > 产生一个恐龙在指定的坐标。 如果x, y, z是null,恐龙将会催生了附近的球员。
+TeleportAllPlayers < X > < Y > < Z > ——所有在线玩家传送到指定的坐标。
+TeleportToPlayer < SteamID1 > < SteamID2 > -短距离瞬间移动运动员1到2。
+TribeChatMsg <类型> < TribeID > <文本> ——发送一个味精网上指定的部落成员。 类型:1 =聊天,2 =广播,通知,3 = 4 = 1 + 2。
+TribeLogMsg < TribeID > <文本> ——发送一个味精部落tribelog指定
+UnlockEngram < SteamID > < BlueprintPath > ——指定玩家打开记忆的痕迹。

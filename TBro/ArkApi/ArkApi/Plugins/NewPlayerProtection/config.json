@@ -1,0 +1,62 @@
+{
+  "General": {
+	"1": "下面一栏填入数据库地址，示例：D:/npp.db保护时间在最下面HoursOfProtection设置",
+    "DbPathOverride": "",
+    "EnableDebugging": false,
+    "PlayerUpdateIntervalInMins": 10,
+    "IgnoreAdmins": false,
+    "AllowNewPlayersToDamageEnemyStructures": false,
+    "AllowPlayersToDisableOwnedTribeProtection": true,
+    "AllowWildCorruptedDinoDamage": false,
+    "AllowWildDinoDamage": true,
+    "NPPPlayerDecayInHours": 384,
+    "NPPCommandPrefix": "/",
+    "NPPAdminGroup": "NPPAdmin",
+
+    "NewPlayerDoingDamageMessage": "你处于保护期间！输入'/npp disable' 解除保护，输入'/npp status'查看保护时间。\n 由TBro汉化服主交流QQ群1002732429",
+    "NewPlayerStructureTakingDamageMessage": "这个部落的建筑处于保护期!",
+    "NewPlayerStructureTakingDamageFromUnknownTribemateMessage": "这个部落的建筑还在保护期!",
+
+    "NPPRemainingMessage": "剩余新玩家保护: {} 天 {} 小时 {} 分钟 或 {} 级! [根据部落内最老成员]",
+    "NPPInfoMessage": "本服新手保护设置: {}小时的保护, 部落最大玩家等级: {}.",
+    "NPPInvalidCommand": "无效的命令!",
+    "NewPlayerProtectionDisableSuccess": "你的部落不受新手保护!",
+    "NotANewPlayerMessage": "你的部落不受新手保护!",
+    "NotTribeAdminMessage": "你不是部落管理员!",
+    "TribeIDText": "面向建筑所属部落ID: {}.",
+    "NoStructureForTribeIDText": "面向目标建筑以获取该建筑所属部落的ID",
+    "PVEDisablePlayerMessage": "PVE部落不能取消保护",
+    "PVEStatusMessage": "你的部落是PVE部落",
+    "NotAStructureMessage": "你面向的不是建筑!",
+    "IsAdminTribe": "该部落所有成员都是新手保护管理组.",
+
+    "AdminNoTribeExistsMessage": "该部落ID不存在: {}",
+    "AdminTribeProtectionRemoved": "该部落的保护已取消: {}",
+    "AdminTribeNotUnderProtection": "该部落不在保护状态: {}",
+    "AdminResetTribeProtectionSuccess": "{}小时保护时间已发放到部落ID: {}",
+    "AdminResetTribeProtectionLvlFailure": "该部落内有成员已经超过最大保护等级不能给与保护: {}",
+    "AdminPVETribeAddedSuccessMessage": "该部落已经转变成PVE部落: {}",
+    "AdminPVETribeAlreadyAddedMessage": "该部落已经是PVE部落了: {}",
+    "AdminPVETribeRemovedSuccessMessage": "成功将该部落移除PVE部落: {}",
+    "AdminPVETribeAlreadyRemovedMessage": "该部落不是PVE部落: {}",
+
+    "MessageIntervalInSecs": 10,
+    "MessageTextSize": 1.4,
+    "MessageDisplayDelay": 10,
+    "MessageColor": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+
+    "NewPlayerProtection": {
+      "NewPlayerMaxLevel": 365,
+      "HoursOfProtection": 72
+    },
+
+    "StructureExemptions": [
+		"Blueprint'/Game/PrimalEarth/Structures/C4Charge.C4Charge'"
+    ]
+  }
+}
