@@ -1,9 +1,9 @@
 {  
   "settings":{  
-    "AutomaticPluginReloading":false,
+    "AutomaticPluginReloading":true,
     "AutomaticPluginReloadSeconds":5,
     "SaveWorldBeforePluginReload":true,
-	"DumpAll": false
+	"DumpAll": true
   },
   "structures":[  
     "UWorld",
@@ -91,7 +91,9 @@
     "APrimalStructureTurret",
     "FOverlapResult",
     "UVictoryCore",
-    "ULevelBase"
+    "ULevelBase",
+	"ABasePlayerController",
+	"FAvailableMission"
   ],
   "functions":[  
     "StaticLoadObject",
