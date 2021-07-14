@@ -235,7 +235,7 @@
             "Dependencies": [
                 "Permissions"
             ],
-            "Description": "TBro Cross Servers Chat",
+            "Description": "TBro Cross Servers Chat Used Socket",
             "FileList": [
                 "config.json",
                 "PluginInfo.json",
@@ -245,7 +245,7 @@
             "FullName": "TBro Cross Chat",
             "MinApiVersion": 3.4,
             "ResourceId": 14,
-            "Version": 2.23
+            "Version": 2.251
         },
         "StructuresLimit": {
             "Description": "Limit the structures of a tribe or a player in the whole map",
