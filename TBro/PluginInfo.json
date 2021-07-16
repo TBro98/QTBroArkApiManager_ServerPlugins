@@ -240,12 +240,13 @@
                 "config.json",
                 "PluginInfo.json",
                 "SocketCrossChat.dll",
+                "SocketCrossChat.pdb",
                 "说明.txt"
             ],
             "FullName": "TBro Cross Chat",
             "MinApiVersion": 3.4,
             "ResourceId": 14,
-            "Version": 2.251
+            "Version": 2.252
         },
         "StructuresLimit": {
             "Description": "Limit the structures of a tribe or a player in the whole map",
