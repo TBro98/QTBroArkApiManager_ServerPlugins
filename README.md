@@ -14,7 +14,7 @@ Server Plugins for QTBroArkApiManager
 ## How to upload new plugins
 1.Clone this repository
 
-2.Add new plugin files
+2.Add new plugin files to /TBro/ArkApi/ArkApi/Plugins/
 
 3.Double click to open \TBro\UpdatePluginInfo.exe
 
