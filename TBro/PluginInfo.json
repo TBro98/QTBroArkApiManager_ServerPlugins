@@ -148,6 +148,18 @@
             "ResourceId": 50,
             "Version": 1.9
         },
+        "NoDoubleOpen": {
+            "Description": "TBro No Double Open Qqun 1002732429",
+            "FileList": [
+                "config.json",
+                "NoDoubleOpen.dll",
+                "PluginInfo.json",
+                "安装指南.txt"
+            ],
+            "FullName": "TBro No Double Open",
+            "MinApiVersion": 3.1,
+            "Version": 1.6
+        },
         "PVPScheduler": {
             "Description": "Enable PVP on specific days and hours",
             "FileList": [
