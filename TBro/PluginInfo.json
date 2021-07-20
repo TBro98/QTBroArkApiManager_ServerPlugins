@@ -258,7 +258,7 @@
             "FullName": "TBro Cross Chat",
             "MinApiVersion": 3.4,
             "ResourceId": 14,
-            "Version": 2.252
+            "Version": 2.26
         },
         "StructuresLimit": {
             "Description": "Limit the structures of a tribe or a player in the whole map",
