@@ -329,11 +329,11 @@
             "Version": 1.2
         },
         "SocketCrossChat": {
-            "ChineseName": "TBro跨服聊天",
+            "ChineseName": "TBro跨服聊天(图标防双开授权)",
             "Dependencies": [
                 "Permissions"
             ],
-            "Description": "TBro Cross Servers Chat Used Socket",
+            "Description": "TBro Cross Servers Chat Used Socket with ICON",
             "FileList": [
                 "config.json",
                 "PluginInfo.json",
