@@ -127,7 +127,7 @@
             "Version": 2.2
         },
         "DeathmatchEvent": {
-            "ChineseName": "活动时间管理-大逃杀",
+            "ChineseName": "活动事件管理-大逃杀",
             "Dependencies": [
                 "AZEventManager"
             ],
