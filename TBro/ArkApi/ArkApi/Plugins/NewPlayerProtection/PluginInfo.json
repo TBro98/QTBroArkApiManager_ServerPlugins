@@ -1,5 +1,6 @@
 {
   "FullName": "New Player Protection Plugin",
+  "ChineseName": "新玩家保护",
   "Description": "Gives new players structure protection.",
   "Version": 1.9,
   "MinApiVersion": 3.4,

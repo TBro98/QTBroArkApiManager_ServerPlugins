@@ -1,5 +1,6 @@
 {
   "FullName":"Shop Rewards",
+  "ChineseName": "击杀金币奖励",
   "Description":"Rewards for killing dinos and players & stats",
   "Version":1.2,
   "MinApiVersion":3.0,

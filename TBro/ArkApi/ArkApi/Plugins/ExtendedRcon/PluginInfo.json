@@ -1,5 +1,6 @@
 {
   "FullName":"Extended Rcon",
+  "ChineseName": "RCON扩展命令",
   "Description":"Additional RCON commands",
   "Version":3.2,
   "MinApiVersion":3.2

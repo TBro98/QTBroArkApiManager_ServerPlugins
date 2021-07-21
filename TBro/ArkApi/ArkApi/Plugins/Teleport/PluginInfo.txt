@@ -1,0 +1,25 @@
+聊天命令：
+/ tpr <角色名称>-向玩家请求传送
+/ tpa-接受玩家的传送请求
+
+控制台命令：
+
+cheat offline<CharacterName>-管理员查找离线播放器
+cheat otp <ID>-管理员传送到离线播放器
+cheat tp <CharacterName>-管理员传送到角色
+cheat tpm <角色名称>-管理员传送给你的角色
+cheat tt-管理员传送您正在寻找的恐龙（非常近距离）
+cheat tpd <距离>-管理员将所有部落驯服的恐龙传送给您<距离>：1-8000
+cheat tpdp <距离> <角色名称>-管理员传送一个玩家部落驯服的恐龙给你
+cheat tpp <X> <Y> <Z>-管理员传送到位置
+cheat pos-管理员输出当前位置
+cheat treload-重新加载传送配置
+配置：
+TPREnabled-启用Player传送请求：仅true或false值
+TPRCoolDownEnabled-玩家可以再次tpr之前的冷却时间
+TPRCoolDownForPlayerTeleportedTo-将冷却时间应用于传送到的玩家
+TPRCoolDownSeconds-冷却持续多长时间（以秒为单位）
+TPRDelaySeconds-传送请求玩家传送之前的延迟（以秒为单位）
+TPRMaxDistance-传送请求播放器可以彼此分开传送的最大距离-1禁用
+TPRAllowDinoTeleport-允许恐龙通过传送请求的玩家传送，这不会影响管理员命令
+Messages-更改这些消息是可以的，只需确保将所有{}保留在字符串中

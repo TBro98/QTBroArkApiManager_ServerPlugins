@@ -1,5 +1,6 @@
 {
   "FullName":"Safe Zone",
+  "ChineseName": "安全区",
   "Description":"Create Safe Zones",
   "Version":3.2,
   "MinApiVersion":2.6,

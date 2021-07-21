@@ -1,0 +1,8 @@
+{
+  "FullName":"Teleport",
+  "ChineseName": "互相传送",
+  "Description":"Teleport Players, Dino's",
+  "Version":2.0,
+  "MinApiVersion":3.1,
+  "ResourceId":11
+}

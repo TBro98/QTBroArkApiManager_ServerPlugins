@@ -1,0 +1,16 @@
+{
+  "Groups": {
+    "Admins": "/Game/PrimalEarth/UI/Textures/ServerAdminChat_Icon.ServerAdminChat_Icon",
+    "AnotherGroup": "/Game/PrimalEarth/CoreBlueprints/StatusIcons/Mating_Icon.Mating_Icon"
+  },
+  "TribeIds": {
+	"123456790": {
+	  "SomeTribeRank1": "/Game/PrimalEarth/UI/Textures/WildcardAdminChat_Icon.WildcardAdminChat_Icon",
+	  "SomeTribeRank2": "/Game/PrimalEarth/UI/Textures/StatsIcons/Fortitude_Icon.Fortitude_Icon"
+    }
+  },
+  "SteamIds": {
+    "1234567890": "/Game/Aberration/Icons/Resources/Gem3_Icon.Gem3_Icon"
+  },
+  "Debug": false
+}

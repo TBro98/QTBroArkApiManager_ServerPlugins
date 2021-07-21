@@ -1,5 +1,6 @@
 {
   "FullName":"Ark Homes",
+  "ChineseName": "家园系统",
   "Description":"Home & teleport system for Ark",
   "Version":1.1,
   "MinApiVersion":2.7,

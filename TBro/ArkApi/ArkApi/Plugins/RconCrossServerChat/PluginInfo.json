@@ -1,0 +1,8 @@
+{
+  "FullName":"RconCrossServerChat",
+  "ChineseName": "RCON版跨服聊天",
+  "Description":"Cross Server chat using RCON",
+  "Version":1.7,
+  "MinApiVersion":2.8,
+  "ResourceId":65
+}

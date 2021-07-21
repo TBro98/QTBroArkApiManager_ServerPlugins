@@ -1,0 +1,9 @@
+命令：
+/ players-列出所有在线的玩家名称
+/ steamids-在方括号中列出带有Steam ID的玩家名称
+/ playerids-在方括号中列出具有玩家ID的玩家名称
+/ tribeids - 与部落名称及部落ID括号内列出球员的名字
+
+Confg：
+
+StaffOnly-如果只有true，只有职员可以使用/ players命令（所有其他命令仅是staff）

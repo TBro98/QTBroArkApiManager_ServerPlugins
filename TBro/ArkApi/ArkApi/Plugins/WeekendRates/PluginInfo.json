@@ -1,5 +1,6 @@
 {
   "FullName":"WeekendRates",
+  "ChineseName": "周末倍率修改",
   "Description":"Change multiplier's for weekend only",
   "Version":1.4,
   "MinApiVersion":3.1

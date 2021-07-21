@@ -1,5 +1,6 @@
 {
   "FullName":"Structures Limit",
+  "ChineseName": "部落建筑数量限制",
   "Description":"Limit the structures of a tribe or a player in the whole map",
   "Version":2.5,
   "MinApiVersion":3.2

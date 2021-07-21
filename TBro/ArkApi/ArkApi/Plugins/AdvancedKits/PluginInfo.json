@@ -1,0 +1,10 @@
+{
+  "FullName": "Advanced Kits",
+  "ChineseName": "礼包扩展命令",
+  "Description": "Exp, Commands and Beacons in Kits",
+  "Version": 1.2,
+  "MinApiVersion": 3.0,
+  "Dependencies":[
+    "ArkShop"
+  ]
+}

@@ -1,0 +1,8 @@
+{  
+  "FullName":"Alternative Commands",
+  "ChineseName": "多命令",
+  "Description":"Creates command synonyms",
+  "Version":1.1,
+  "MinApiVersion":2.9,
+  "ResourceId":52
+}

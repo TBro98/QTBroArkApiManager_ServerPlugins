@@ -1,0 +1,10 @@
+{
+	"CrossChatKey":"",
+	"CrossChatMapNameInclude":true,
+	"RconServers":[
+	"127.0.0.1:32300",
+	"127.0.0.1:32301"
+	],
+	"CrossChatMapNameOverride":"",
+	"Async":true
+}

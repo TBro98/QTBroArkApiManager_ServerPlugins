@@ -1,5 +1,6 @@
 {
   "FullName":"Deathmatch",
+  "ChineseName": "活动时间管理-大逃杀",
   "Description":"DM Event",
   "Version":2.6,
   "MinApiVersion":3.2,

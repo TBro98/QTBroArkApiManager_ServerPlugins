@@ -1,5 +1,6 @@
 {
   "FullName":"KillFeed",
+  "ChineseName": "击杀显示",
   "Description":"Player & Dino Death Logs",
   "Version":2.3,
   "MinApiVersion":2.5,

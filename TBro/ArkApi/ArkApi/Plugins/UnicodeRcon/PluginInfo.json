@@ -1,5 +1,6 @@
 {
   "FullName":"Unicode Rcon",
+  "ChineseName": "后台RCON中文支持",
   "Description":"Unicode support for RCON",
   "Version":1.2,
   "MinApiVersion":2.1

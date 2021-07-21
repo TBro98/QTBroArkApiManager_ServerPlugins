@@ -1,0 +1,44 @@
+{
+ "General": {
+ "PORT":54121,						========自定义一个新的用于跨服使用的端口，不能与已使用的端口重复
+ "MapName":"[2]",					========跨服消息显示的该地图的地图名
+ "MapShowMode":1,					========地图名显示在聊天框中的位置，建议用1
+ "MapShowMode提示":"地图名放置位置选择，1显示在最前面，2显示在玩家名和部落名之间，3显示在消息前。3时Group里的Message需要两个{}传递"
+ },
+ "Servers":{
+ "192.168.3.41": [					========跨服服务器列表的ip
+    54120,							========跨服服务器列表各自的配置文件中设置的PORT列表，用英文逗号隔开
+	54121							========比如地图1设置PORT为54120，地图2设置PORT为54121，地图3设置PORT为54123，则[]里填写54120,54121,54123	
+    ]
+ },
+ "Groups":{		！！！！授权功能			分组设置
+	"Default":{						Default是默认组
+		"icon":"",					Default组的图标路径，为空则无图标
+		"Message":"{}",				其他地图显示的Default组的跨服消息格式
+		"LocalMessage":"{}"			本地图Default组说话的消息格式
+	},
+	"VIP1":							VIP1分组的设置，同上
+	{
+		"icon":"/Game/PrimalEarth/UI/Textures/CraftingBrokenIcon.CraftingBrokenIcon",
+		"Message":"<RichColor Color=\"0,225,225,1\">{}</>",
+		"LocalMessage":"{}"
+	}
+ },
+ "SteamID":		！！！！授权功能				个人专属图标设置
+ {
+	"76560000000000000":"/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/Icons/MetalHat_Icon.MetalHat_Icon",
+	"steamid":"图标路径"
+ }
+}
+
+
+config.json配置重载RCON控制台命令：SocketCrossChat.reload
+消息跨服为免费使用功能，不授权不影响使用
+新装把config.json也拉进去
+
+TbroCrossChat授权版本更新此版本：
+把原先收费版本里的jiqima.txt和config.json文件放入新的跨服文件夹中即可，原先TBroSocketChat文件夹删除
+
+版本包含55机器人定制功能（免费使用）
+插件授权与55机器人授权独立
+55机器人授权咨询机器人作者

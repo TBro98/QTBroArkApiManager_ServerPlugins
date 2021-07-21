@@ -1,5 +1,6 @@
 {
   "FullName":"Advert Messages",
+  "ChineseName": "广告",
   "Description":"Timed chat messages",
   "Version":1.2,
   "MinApiVersion":2.3,

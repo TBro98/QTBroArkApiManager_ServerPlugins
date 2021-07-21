@@ -1,0 +1,7 @@
+{
+  "FullName":"Chat Icons",
+  "ChineseName": "本地聊天图标",
+  "Description":"Allows changing player chat icons by group or steam id",
+  "Version":2.2,
+  "MinApiVersion":3.0
+}

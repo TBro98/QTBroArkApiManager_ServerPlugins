@@ -1,5 +1,6 @@
 {
   "FullName":"Event Manager",
+  "ChineseName": "活动事件管理",
   "Description":"Automatically run custom events.",
   "Version":2.6,
   "MinApiVersion":3.2,

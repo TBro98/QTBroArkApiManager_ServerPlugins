@@ -1,5 +1,6 @@
 {
   "FullName":"TBro Cross Chat",
+  "ChineseName": "TBro跨服聊天",
   "Description":"TBro Cross Servers Chat Used Socket",
   "Version":2.26,
   "MinApiVersion":3.4,

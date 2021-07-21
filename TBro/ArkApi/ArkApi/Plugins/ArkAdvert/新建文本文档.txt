@@ -1,9 +1,0 @@
-Advert.Reload - Reloads config
-
-ClientChat - Chat message
-ServerChat - Server chat message
-Notification - On-screen message
-
-ClientChat-聊天消息
-ServerChat-服务器聊天消息
-通知-屏幕消息

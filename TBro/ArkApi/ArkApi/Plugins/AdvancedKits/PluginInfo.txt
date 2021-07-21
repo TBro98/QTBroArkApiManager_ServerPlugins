@@ -1,0 +1,14 @@
+在“项目”部分中使用以下内容：
+$ advkits cmd`< 命令 >`-运行命令。使用{steamid}作为SteamID，并确保在命令中包含`。
+$ advkits exp < 金额 >-增加经验值
+$ advkits信标< ClassName >-生成指定的信标
+$ advkits playercmd`< 命令 >`-与“ PlayerCommand”控制台命令相同。据我所知仅用于提升。区分大小写，就像实际命令一样-请参见示例。
+$ advkits box < BoxName > < Amount >-如果您使用LootBoxes Plus，则奖励一个lootbox
+
+
+Use these inside of your Items section:
+$advkits cmd `<Command>` - Runs a command. Use {steamid} for SteamID, and make sure to include the ` around your command.​
+$advkits exp <Amount> - Adds experience points​
+$advkits beacon <ClassName> - Spawns the specified beacon​
+$advkits playercmd `<Command>` - Same as "PlayerCommand" console command. Only used for Ascension as far as I know. Case sensitive just like the actual command - See the example.​
+$advkits box <BoxName> <Amount> - Awards a lootbox if you use LootBoxes Plus

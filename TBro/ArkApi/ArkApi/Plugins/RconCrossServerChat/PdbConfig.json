@@ -1,0 +1,6 @@
+{
+  "structures": [
+	"FInternetAddr",
+	"FInternetAddrBSD"
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "FullName":"Lottery",
+  "ChineseName": "金币抽奖",
   "Description":"Play Lottery",
   "Version":1.3,
   "MinApiVersion":2.5,
