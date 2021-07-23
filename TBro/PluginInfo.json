@@ -329,7 +329,7 @@
             "Version": 1.2
         },
         "SocketCrossChat": {
-            "ChineseName": "TBro跨服聊天(图标防双开授权)",
+            "ChineseName": "TBro跨服聊天(图标防双开)",
             "Dependencies": [
                 "Permissions"
             ],
