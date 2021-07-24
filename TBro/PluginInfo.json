@@ -106,8 +106,7 @@
                 "config示例.json",
                 "ExcludeEngrams.txt",
                 "PluginInfo.json",
-                "命令文档.txt",
-                "更新日志.txt"
+                "PluginInfo.txt"
             ],
             "FullName": "TBro Ark Shop",
             "MinApiVersion": 3.4,

@@ -1,6 +1,25 @@
 翻译者：TBro
 技术交流Q群：1002732429
 
+vip系统操作介绍
+cheat Permissions.AddGroup 设置的vip组（配置文件做了多少vip级别开服的时候就使用这命令一条条增加）
+例如：cheat Permissions.AddGroup vip1
+          cheat Permissions.AddGroup vip2
+PS:需要先设置该组才能把玩家加进该组
+===================================================================
+给玩家上vip组别命令
+cheat Permissions.Add STMID 组别
+例如：cheat Permissions.Add 123123123123123 vip9
+===================================================================
+删除玩家vip组别命令
+cheat Permissions.Remove 123123123123123 vip7
+例如：cheat Permissions.Remove 123123123123123 vip
+===================================================================
+Permissions.ListGroups -列出本服务器添加的分组
+Permissions.GroupPermissions<Group>
+Permissions.PlayerGroups <SteamID> -查看该steamid玩家的分组
+PS.游戏内输入需要前面加cheat，后台控制台不需要cheat
+
 
 ##控制台及RCON命令
 
