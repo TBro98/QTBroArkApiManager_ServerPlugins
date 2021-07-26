@@ -1,5 +1,12 @@
 {
     "ArkApi": {
+        "FileList": [
+            "config.json",
+            "msdia140.dll",
+            "version.dll",
+            "version.json",
+            "version.pdb"
+        ],
         "Version": 3.52
     },
     "PluginInfo": {
