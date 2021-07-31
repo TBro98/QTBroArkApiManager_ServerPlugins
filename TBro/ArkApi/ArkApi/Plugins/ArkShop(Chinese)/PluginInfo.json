@@ -3,7 +3,7 @@
   "ChineseName": "高级商店(TBro)",
   "Description":"TBro-Shop, Currency & Kits",
   "Version":2.902,
-  "MinApiVersion":3.4,
+  "MinApiVersion":3.5,
   "ResourceId":14,
   "Dependencies":[
     "Permissions"

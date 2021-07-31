@@ -15,19 +15,25 @@
  "Groups":{
 	"Default":{
 		"icon":"/Game/PrimalEarth/UI/Textures/CraftingBrokenIcon.CraftingBrokenIcon",
-		"Message":"{}",
-		"LocalMessage":"{}"
+		"Message":"{}"
 	},
 	"VIP1":
 	{
 		"icon":"/Game/PrimalEarth/UI/Textures/CraftingBrokenIcon.CraftingBrokenIcon",
-		"Message":"<RichColor Color=\"0,225,225,1\">{}</>",
-		"LocalMessage":"{}"
+		"Message":"<RichColor Color=\"0,225,225,1\">{}</>"
 	}
  },
  "SteamID":
  {
-	"steamid1":"图标路径",
-	"steamid1":"图标路径"
+	"7000000000000000000":
+	{
+		"icon":"/Game/Aberration/Icons/Buffs/Impregnate_Icon.Impregnate_Icon",
+		"Message":"<RichColor Color=\"0,0,225,1\">{}</>"
+	},
+	"7000000000000000001":
+	{
+		"icon":"/Game/Aberration/Icons/Buffs/Impregnate_Icon.Impregnate_Icon",
+		"Message":"<RichColor Color=\"0,0,225,1\">{}</>"
+	}
  }
 }

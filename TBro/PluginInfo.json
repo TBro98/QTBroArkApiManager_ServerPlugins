@@ -116,7 +116,7 @@
                 "PluginInfo.txt"
             ],
             "FullName": "TBro Ark Shop",
-            "MinApiVersion": 3.4,
+            "MinApiVersion": 3.5,
             "ResourceId": 14,
             "Version": 2.902
         },
@@ -348,9 +348,9 @@
                 "SocketCrossChat.pdb"
             ],
             "FullName": "TBro Cross Chat",
-            "MinApiVersion": 3.4,
+            "MinApiVersion": 3.5,
             "ResourceId": 14,
-            "Version": 2.261
+            "Version": 2.27
         },
         "StructuresLimit": {
             "ChineseName": "部落建筑数量限制",
