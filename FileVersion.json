@@ -1,6 +1,7 @@
 {
     "translations/zh.qm":"1.0.001",
     "QTBroArkApiManager.exe":"1.0.263",
-	"TBroShopTool.exe":"2.9.2",
-	"Update.exe":"1.0.003"
+	"TBroShopTool.exe":"2.9.3",
+	"Update.exe":"1.0.003",
+	"iconengines/TBro.ico":"1.0.0"
 }
