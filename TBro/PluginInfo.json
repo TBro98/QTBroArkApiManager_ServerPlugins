@@ -42,6 +42,24 @@
             "MinApiVersion": 3.0,
             "Version": 1.2
         },
+        "AllEngrams": {
+            "ChineseName": "印痕解锁(高级商店已集成)",
+            "Dependencies": [
+                "Permissions"
+            ],
+            "Description": "The easy way to learn all engrams",
+            "FileList": [
+                "AllEngrams.dll",
+                "config.json",
+                "Engrams.txt",
+                "ExcludeEngrams.txt",
+                "PluginInfo.json"
+            ],
+            "FullName": "All Engrams",
+            "MinApiVersion": 2.8,
+            "ResourceId": 6,
+            "Version": 1.6
+        },
         "AlternativeCommands": {
             "ChineseName": "多命令",
             "Description": "Creates command synonyms",
@@ -115,10 +133,10 @@
                 "PluginInfo.json",
                 "PluginInfo.txt"
             ],
-            "FullName": "TBro Ark Shop",
+            "FullName": "TBro Ark Shop(Chinese)",
             "MinApiVersion": 3.5,
             "ResourceId": 14,
-            "Version": 2.902
+            "Version": 2.903
         },
         "ChatIcons": {
             "ChineseName": "本地聊天图标",

@@ -1,0 +1,11 @@
+{
+  "FullName":"All Engrams",
+  "ChineseName":"印痕解锁(高级商店已集成)",
+  "Description":"The easy way to learn all engrams",
+  "Version":1.6,
+  "MinApiVersion":2.8,
+  "ResourceId":6,
+  "Dependencies":[
+    "Permissions"
+  ]
+}
