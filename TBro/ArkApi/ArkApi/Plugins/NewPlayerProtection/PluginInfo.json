@@ -2,7 +2,7 @@
   "FullName": "New Player Protection Plugin",
   "ChineseName": "新玩家保护",
   "Description": "Gives new players structure protection.",
-  "Version": 2.0,
+  "Version": 2.1,
   "MinApiVersion": 3.52,
   "ResourceId": 50
 }

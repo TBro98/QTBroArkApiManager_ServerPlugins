@@ -233,7 +233,7 @@
             "FullName": "New Player Protection Plugin",
             "MinApiVersion": 3.52,
             "ResourceId": 50,
-            "Version": 2.0
+            "Version": 2.1
         },
         "NoDoubleOpen": {
             "ChineseName": "数据库防双开(TBro)授权版",
