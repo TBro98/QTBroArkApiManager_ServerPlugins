@@ -1,11 +1,13 @@
 {
+   "KickMessage":"踢出提示",
    "DbPathOverride":"",		//数据库路径，格式如  C:/NoDoubleOpen.db
    "LogPath":""			//检测记录，格式如 C:/NoDoubleOpen.txt
 }
 
 
 新装插件除了复制NoDoubleOpen文件夹到插件目录下，然后还得把目录下的config.json放进去，然后设置数据库路径，如  C:/NoDoubleOpen.db    保存后复制到其他地图的插件目录
-
+1.66更新
+玩家踢出提示信息可配置，"KickMessage"
 1.64更新
 修复打不开的问题
 1.62更新

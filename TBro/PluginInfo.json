@@ -245,8 +245,8 @@
                 "PluginInfo.txt"
             ],
             "FullName": "TBro No Double Open",
-            "MinApiVersion": 3.1,
-            "Version": 1.6
+            "MinApiVersion": 3.5,
+            "Version": 1.66
         },
         "PVPScheduler": {
             "ChineseName": "定时开启PVP",
