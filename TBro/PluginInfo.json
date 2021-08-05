@@ -274,7 +274,7 @@
             ],
             "FullName": "Permissions",
             "MinApiVersion": 3.4,
-            "Version": 1.8
+            "Version": 1.81
         },
         "PlayerList": {
             "ChineseName": "在线玩家列表",
