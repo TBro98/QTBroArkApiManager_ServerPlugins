@@ -368,7 +368,7 @@
             "FullName": "TBro Cross Chat",
             "MinApiVersion": 3.5,
             "ResourceId": 14,
-            "Version": 2.3
+            "Version": 2.31
         },
         "StructuresLimit": {
             "ChineseName": "部落建筑数量限制",
