@@ -1,0 +1,11 @@
+QTreeWidget::item{
+	height:30px;
+}
+QTreeWidget::branch:has-children
+{
+	image: url(./iconengines/ArkServerAPI.png);
+}
+QTreeWidget::branch:open
+{
+	background-color: #ff0000;
+}
