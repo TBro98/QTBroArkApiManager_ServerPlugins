@@ -1,0 +1,99 @@
+{
+	"TieringProtection": {
+		"DiscordWebHookURL": "",  // the private discord channel to send messages to
+		"Enabled": true,
+		"IgnoreAdmin": true,     // ignore admins, set to false if you wish to test Tier Protection as an admin
+		
+		"EnableLowToAttackHigh": true,   // enable low tier to attack higher tier
+		"LowAttackHighWarningCount": 5,  // number of warnings before low tier becomes the tier they are attacking
+		
+		"AllowDemolitionAttack":  true,  // if the structure can be demolished , then allow the player to damage it and ignore Tier Protection rules
+		"AllowAttackOnDecayDayNumber": 8, // the number of days of decay time allowed before Tier Protection is ignored, on day 8, protection is removed
+		
+		"PlayerUpdateIntervalInMins": 5, // how often to update the database
+		"WarningResetCooldown": 30,      // number of seconds before warning counter resets
+		
+		"MessageIntervalInSecs": 5,      // how long the warning message displays for
+		"MessageTextSize": 1.4,
+		"MessageDisplayDelay": 10,       // how long to wait before next message
+		"MessageColor": [
+			1.0,
+			0.0,
+			0.0,
+			0.0
+		],  	    
+		
+		"StructureExemptions": [   // stuctures to ignore from Tier Protection rules
+			"FenceFoundation",
+			"FenceSupport"
+		],
+
+		// dont change these TierTrigger setting unless you know what you are doing :)	
+		// ----------------------------------------------------------------------------
+		// to trigger Stone Tier the player must have ALL of these engrams unlocked
+		"StoneTierTriggerBP": [
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Stone/PrimalItemStructure_StoneFloor.PrimalItemStructure_StoneFloor'"
+		],
+
+		// to trigger Metal Tier the player must have ALL of these engrams unlocked
+		"MetalTierTriggerBP": [
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalFloor.PrimalItemStructure_MetalFloor'"
+		],
+
+		// to trigger Partial-Tek the player must have ONE of these engrams unlocked
+		// to trigger Full-Tek Tier the player must have ALL of these engrams unlocked
+		"TekTierTriggerBP": [
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekReplicator.PrimalItemStructure_TekReplicator'",
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TurretTek.PrimalItemStructure_TurretTek'",
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekShield.PrimalItemStructure_TekShield'"
+		],
+		// the amount of days a tribe is protected in the tier they are in
+		"MaxTierProtectionDurationInDays": {
+		    "Enabled": true,    // disable
+			"Thatch": 5,        // players are protected for 5 days in Thatch tier
+			"Stone": 10,
+			"Metal": 20,
+			"PartialTek": 30
+		},
+		// New Messaging config allows for multi language support.
+		// In the example below you could add a Spanish group to Permissions and anyone win that group will see the messages in Spanish
+		"Messages":{
+			"Groups":{
+				"Default": {
+					"SenderNameInChat": "TIER PROTECTION",
+					"Warning": "Warning",
+					"LastWarning": "LAST WARNING",
+					"HigherAttackingLowerMessage": "You cannot attack a lower tier tribe ({} vs {})",
+					"LowerAttackingHigherMessage": "You cannot attack a higher tier tribe ({} vs {})",
+					"LowerAttackingHigherWarning": "You are attacking a higher tier tribe ({} vs {}). If you continue to attack them you WILL LOSE your Tiering PROTECTION and they CAN attack you back.",
+					"LowerMarkedHigherMessage": "You are now marked as {} tier against this tribe and they can attack you back now. Good luck!",
+					"DiscordMessage": "Tribe: {} ({}) was tier: {} and is now tier: {} against Tribe: {} ({})",
+					"TimeRemainingInTierMessage": "Your {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
+					"TierStatusMessage": "You are currently {} tier",
+					"LabelTier1": "Thatch",
+					"LabelTier2": "Stone",
+					"LabelTier3": "Metal",
+					"LabelTier4": "Partial-Tek",
+					"LabelTier5": "Full-Tek"
+				},
+				"Spanish": {
+					"SenderNameInChat": "PROTECCIÓN DE NIVELES",
+					"Warning": "Advertencia",
+					"LastWarning": "ÚLTIMA ADVERTENCIA",
+					"HigherAttackingLowerMessage": "No puedes atacar a una tribu de nivel inferior ({} vs {})",
+					"LowerAttackingHigherMessage": "No puedes atacar a una tribu de nivel superior ({} vs {})",
+					"LowerAttackingHigherWarning": "Estás atacando a una tribu de nivel superior ({} vs {}). Si continúas atacándolos, PERDERÁS TU PROTECCIÓN DE NIVEL y ELLOS PUEDEN atacarte de nuevo.",
+					"LowerMarkedHigherMessage": "Ahora estás marcado como nivel {} contra esta tribu y ahora pueden atacarte.¡Buena suerte!",
+					"DiscordMessage": "Tribu: {} ({}) era nivel: {} y ahora es nivel: {} contra Tribu: {} ({})",
+					"TimeRemainingInTierMessage": "Su {} nivel de protección vence en: {} Día (s) {} Hora (s) {} Minuto (s)",
+					"TierStatusMessage": "Actualmente es el nivel {}",
+					"LabelTier1": "Thatch",
+					"LabelTier2": "Stone",
+					"LabelTier3": "Metal",
+					"LabelTier4": "Partial-Tek",
+					"LabelTier5": "Full-Tek"
+				}
+			}
+		}
+	}
+}

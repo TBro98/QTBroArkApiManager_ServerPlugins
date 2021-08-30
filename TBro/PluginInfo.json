@@ -398,6 +398,20 @@
             "ResourceId": 11,
             "Version": 2.0
         },
+        "TierProtection": {
+            "ChineseName": "Tier部落等级保护",
+            "Description": "Gives continuous structure protection by Tier.",
+            "FileList": [
+                "config.json",
+                "PluginInfo.json",
+                "PluginInfo.txt",
+                "TierProtection.dll",
+                "TierProtection.pdb"
+            ],
+            "FullName": "Tier Protection",
+            "MinApiVersion": 3.52,
+            "Version": 1.2
+        },
         "UnicodeRcon": {
             "ChineseName": "后台RCON中文支持",
             "Description": "Unicode support for RCON",
