@@ -248,6 +248,12 @@
             "MinApiVersion": 3.5,
             "Version": 1.66
         },
+        "NoTurretReload": {
+            "FileList": [
+                "NoTurretReload.dll",
+                "NoTurretReload.pdb"
+            ]
+        },
         "PVPScheduler": {
             "ChineseName": "定时开启PVP",
             "Description": "Enable PVP on specific days and hours",
