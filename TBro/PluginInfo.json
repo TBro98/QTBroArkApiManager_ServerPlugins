@@ -249,10 +249,16 @@
             "Version": 1.66
         },
         "NoTurretReload": {
+            "ChineseName": "Tbro免费炮塔优化",
+            "Description": "TBro No Turret Reload",
             "FileList": [
                 "NoTurretReload.dll",
-                "NoTurretReload.pdb"
-            ]
+                "NoTurretReload.pdb",
+                "PluginInfo.json"
+            ],
+            "FullName": "TBro No Turret Reload",
+            "MinApiVersion": 3.52,
+            "Version": 1.0
         },
         "PVPScheduler": {
             "ChineseName": "定时开启PVP",
