@@ -7,7 +7,7 @@
             "version.json",
             "version.pdb"
         ],
-        "Version": 3.52
+        "Version": 3.53
     },
     "PluginInfo": {
         "AZEventManager": {
