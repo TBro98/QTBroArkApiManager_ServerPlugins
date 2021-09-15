@@ -1,7 +1,6 @@
 {
  "General": {
  "PORT":10000,
- "ChatBanPath":"C://ChatBan.txt",
  "MapName":"[地图名字]",
  "MapShowMode":1,
  "MapShowMode提示":"地图名放置位置选择，1显示在最前面（推荐），2显示在玩家名和部落名之间，3显示在消息前。3时Group里的Message需要两个{}传递"

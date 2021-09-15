@@ -365,12 +365,13 @@
             "Version": 1.2
         },
         "SocketCrossChat": {
-            "ChineseName": "TBro跨服聊天(图标防双开)",
+            "ChineseName": "TBro跨服聊天(图标防双开关键词屏蔽)",
             "Dependencies": [
                 "Permissions"
             ],
             "Description": "TBro Cross Servers Chat Used Socket with ICON",
             "FileList": [
+                "ChatBan.txt",
                 "config.json",
                 "PluginInfo.json",
                 "PluginInfo.txt",
@@ -379,7 +380,7 @@
             ],
             "FullName": "TBro Cross Chat",
             "MinApiVersion": 3.5,
-            "Version": 2.4
+            "Version": 2.41
         },
         "StructuresLimit": {
             "ChineseName": "部落建筑数量限制",
