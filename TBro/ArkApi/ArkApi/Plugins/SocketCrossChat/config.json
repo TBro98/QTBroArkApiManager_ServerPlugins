@@ -6,12 +6,11 @@
  "MapShowMode提示":"地图名放置位置选择，1显示在最前面（推荐），2显示在玩家名和部落名之间，3显示在消息前。3时Group里的Message需要两个{}传递"
  },
  "Servers":{
- "127.0.1.1": [
+ "127.0.0.1": [
     10000,
 	10001
     ]
  },
- "TS":"下面是授权功能",
  "Groups":{
 	"Default":{
 		"icon":"/Game/PrimalEarth/UI/Textures/CraftingBrokenIcon.CraftingBrokenIcon",
