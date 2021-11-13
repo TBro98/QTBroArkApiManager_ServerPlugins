@@ -2,7 +2,7 @@
   "FullName":"TBro Cross Chat",
   "ChineseName": "TBro跨服聊天(图标防双开关键词屏蔽)",
   "Description":"TBro Cross Servers Chat Used Socket with ICON",
-  "Version":2.41,
+  "Version":2.50,
   "MinApiVersion":3.5,
   "Dependencies":[
     "Permissions"
