@@ -380,7 +380,7 @@
             ],
             "FullName": "TBro Cross Chat",
             "MinApiVersion": 3.5,
-            "Version": 2.5
+            "Version": 2.51
         },
         "StructuresLimit": {
             "ChineseName": "部落建筑数量限制",
