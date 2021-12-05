@@ -1,0 +1,63 @@
+{
+	"NoMeshTeleporting":{
+		"Enabled": true,
+		"SenderNameInChat": "Teleporer Error",
+        "TeleporterBubblesCommand": "/tpbubble",
+		
+		"Teleporters": [
+			"TekTeleporter",
+			"TeleporterPlus"
+		],
+		
+		"OnlyAllowVanillaTeleporter": false,
+		"OnlyAllowVanillaFoundations": false,
+		"PreventCeiling": true,
+		"PreventCliffPlatform": true,
+
+        "CeilingRadius": 5,
+		"FoundationRadius": 5,
+		"WallRadius": 10,
+		"EverythingElseRadius": 15,
+        "CeilingBuffer": 700,
+		
+		"StructuresRequired":{
+			"Foundation": {
+				"Amount": 85
+			},
+			"Wall": {
+				"Amount": 40
+			},
+			"Turret": {
+				"MustBeOnToPlace": true,
+				"Amount": 10
+			},
+			"Bed": {
+				"Amount": 1
+			},
+			"Transmitter": {
+				"MustBeOnToPlace": true,
+				"Amount": 1
+			}
+		},
+		"WallDefinition": {
+			"LargeWall": {
+				"WallCount": 4
+			},
+			"XLWall": {
+				"WallCount": 12
+			}		
+		},
+		"Messages":{
+			"GroupPermission":{
+				"Default": {
+                    "LowCeiling": "Your ceiling is too low.",
+					"NotEnoughStructures": "Not enough structures.",
+					"NotEnoughStructuresDetail": "You need {} {} structure(s) nearby to place this teleporter. {} were found.",
+					"MustBePoweredOn": "The {} must be powered on to place this teleporter.",
+					"MustUseVanillaTeleporter": "Only the vanilla teleporter is supported.",
+					"MustUseVanillaFoundations": "Only vanilla foundations are supported for placing teleporters."
+				}
+			}
+		}
+	}	
+}

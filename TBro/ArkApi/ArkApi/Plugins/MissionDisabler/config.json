@@ -1,0 +1,7 @@
+{
+  "ShowMissionNames": true,
+  "DisabledMissions": [
+    "Survive the Ark"
+  ],
+  "DisabledMessage": "This mission has been disabled."
+}

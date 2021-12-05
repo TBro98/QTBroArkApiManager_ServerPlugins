@@ -1,0 +1,10 @@
+{
+  "FullName":"Mission Disabler",
+  "ChineseName": "禁领创世纪任务防蹦服",
+  "Description":"(1.1) Disable missions.",
+  "Version":1.1,
+  "MinApiVersion":3.51,
+  "ResourceId":1,
+  "Dependencies":[
+  ]
+}

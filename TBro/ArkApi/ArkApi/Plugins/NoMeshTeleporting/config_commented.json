@@ -1,0 +1,68 @@
+{
+	"NoMeshTeleporting":{
+		"Enabled": true,  // enables the plugin
+		"SenderNameInChat": "Teleporter Error", // the sender name in chat
+        "TeleporterBubblesCommand": "/tpbubble" // the in game chat command to display the radius bubbbles
+												// the red bubbles are for the ceiling height check
+												// the green bubble is for the foundation check
+												// the blue bubble is for the walls check
+												// the yellow bubble is for checking everything else
+		
+		"Teleporters": [     // teleporters to handle
+			"TekTeleporter",
+			"TeleporterPlus"
+		],
+		
+		"OnlyAllowVanillaTeleporter": false,   // force only vanilla teleporter
+		"OnlyAllowVanillaFoundations": false,  // force only vanilla foundations
+		"PreventCeiling": true,   // prevent ceilings above the teleporter
+		"PreventCliffPlatform": true, // prevent cliff platforms above the teleporter
+
+        "CeilingRadius": 5,    // the radius of the sphere the plugin uses to check for ceilings, this covers the size of the vanilla teleporter
+		                       // this should match the foundation radius
+		"FoundationRadius": 5, // the radius of the sphere the plugin uses to check for foundations
+		"WallRadius": 10,      // the radius of the sphere the plugin uses to check for walls
+		"EverythingElseRadius": 15,  // the radius of the sphere the plugin uses to check for everything else
+        "CeilingBuffer": 700,  // the height buffer size for when looking for ceilings above the teleporter
+		
+		"StructuresRequired":{
+			"Foundation": {
+				"Amount": 85    // the amount of structures required
+			},
+			"Wall": {
+				"Amount": 40    // the amount of structures required
+			},
+			"Turret": {
+				"MustBeOnToPlace": true,   // requires power to be turned on first to place teleporter
+				"Amount": 10    // the amount of structures required
+			},
+			"Bed": {
+				"Amount": 1    // the amount of structures required
+			},
+			"Transmitter": {
+				"MustBeOnToPlace": true,   // requires power to be turned on first to place teleporter
+				"Amount": 1    // the amount of structures required
+			}
+		},
+		"WallDefinition": {   // this section is to handle the wall count for larger wall sizes and modded walls
+			"LargeWall": {
+				"WallCount": 4
+			},
+			"XLWall": {
+				"WallCount": 12
+			}		
+		},
+		"Messages":{
+			"GroupPermission":{
+				"Default": {
+                    "LowCeiling": "Your ceiling is too low.",
+					"NotEnoughStructures": "Not enough structures.",
+					"NotEnoughStructuresDetail": "You need {} {} structure(s) nearby to place this teleporter. {} were found.",
+					"MustBePoweredOn": "The {} must be powered on to place this teleporter.",
+					"MustUseVanillaTeleporter": "Only the vanilla teleporter is supported.",
+					"MustUseVanillaFoundations": "Only vanilla foundations are supported for placing teleporters."
+				}
+			}
+		}
+	}	
+}

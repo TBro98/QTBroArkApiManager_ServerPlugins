@@ -1,0 +1,75 @@
+{该插件通过以下方式攻击这两种漏洞：
+防止在传送器上方放置低天花板和悬崖平台。如果玩家想在传送器上方放置天花板，则它必须比 Mek 高。这样做的原因是因为放置在传送器上方的低天花板是用于将物体推入传送器下方网格的技术之一。传送器无法放置并且如果检测到其上方有天花板则无法工作。
+强制 结构要求以放置和使用传送器。这是为了防止将传送器 90% 塞入墙壁，然后使用它进入网格。
+建议至少需要 85 个基础（基本上是 10x10 基础网格）。这是为了确保足够的检测覆盖范围以防止网格漏洞。如果你走得更小，那么可能会打开网格漏洞利用的大门。
+使用传送器 (E) 时，仅执行基础和天花板要求。
+这个插件还会改变你服务器上游戏玩法的一些元素，让你更难住在真正的小老鼠洞里，部落现在必须在任何地方建造传送器/基地，这很可能会增加你服务器上的pvp。
+
+{
+    "NoMeshTeleporting":{
+        "Enabled": true,  // enables the plugin
+        "SenderNameInChat": "Teleporter Error", // the sender name in chat
+        "TeleporterBubblesCommand": "/tpbubble", // the in game chat command to display the radius bubbles
+                                                // the red bubbles are for the ceiling height check
+                                                // the green bubble is for the foundation check
+                                                // the blue bubble is for the walls check
+                                                // the yellow bubble is for checking everything else
+
+        "Teleporters": [     // teleporters to handle
+            "TekTeleporter",
+            "TeleporterPlus"
+        ],
+
+        "OnlyAllowVanillaTeleporter": false,   // force only vanilla teleporter
+        "OnlyAllowVanillaFoundations": false,  // force only vanilla foundations
+        "PreventCeiling": true,   // prevent ceilings above the teleporter
+        "PreventCliffPlatform": true, // prevent cliff platforms above the teleporter
+
+        "CeilingRadius": 5,    // the radius of the sphere the plugin uses to check for ceilings, this covers the size of the vanilla teleporter
+                               // this should match the foundation radius
+        "FoundationRadius": 5, // the radius of the sphere the plugin uses to check for foundations
+        "WallRadius": 10,      // the radius of the sphere the plugin uses to check for walls
+        "EverythingElseRadius": 15,  // the radius of the sphere the plugin uses to check for everything else
+        "CeilingBuffer": 700,  // the height buffer size for when looking for ceilings above the teleporter
+
+        "StructuresRequired":{
+            "Foundation": {
+                "Amount": 85    // the amount of structures required
+            },
+            "Wall": {
+                "Amount": 40    // the amount of structures required
+            },
+            "Turret": {
+                "MustBeOnToPlace": true,   // requires power to be turned on first to place teleporter
+                "Amount": 10    // the amount of structures required
+            },
+            "Bed": {
+                "Amount": 1    // the amount of structures required
+            },
+            "Transmitter": {
+                "MustBeOnToPlace": true,   // requires power to be turned on first to place teleporter
+                "Amount": 1    // the amount of structures required
+            }
+        },
+        "WallDefinition": {   // this section is to handle the wall count for larger wall sizes and modded walls
+            "LargeWall": {
+                "WallCount": 4
+            },
+            "XLWall": {
+                "WallCount": 12
+            }
+        },
+        "Messages":{
+            "GroupPermission":{
+                "Default": {
+                    "LowCeiling": "Your ceiling is too low.",
+                    "NotEnoughStructures": "Not enough structures.",
+                    "NotEnoughStructuresDetail": "You need {} {} structure(s) nearby to place this teleporter. {} were found.",
+                    "MustBePoweredOn": "The {} must be powered on to place this teleporter.",
+                    "MustUseVanillaTeleporter": "Only the vanilla teleporter is supported.",
+                    "MustUseVanillaFoundations": "Only vanilla foundations are supported for placing teleporters."
+                }
+            }
+        }
+    }
+}
