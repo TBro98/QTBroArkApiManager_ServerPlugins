@@ -1,0 +1,40 @@
+[
+    {
+        "id": "deploy-repo",
+        "execute-command": "/www/wwwroot/file.arkfgf.com/QTBroArkApiManager_ServerPlugins/git.sh",
+        "response-message": "Executing deploy script",
+        "trigger-rule": {
+            "and": [{
+                "match": {
+                    "type": "payload-hash-sha1",
+                    "secret": "arkfgf",
+                    "parameter": {
+                        "source": "header",
+                        "name": "X-Hub-Signature"
+                    }
+                }
+            }, {
+                "match": {
+                    "type": "value",
+                    "value": "refs/heads/master",
+                    "parameter": {
+                        "source": "payload",
+                        "name": "ref"
+                    }
+                }
+            }]
+        }
+    }
+]
+
+
+
+
+[Unit]
+Description=Webhook
+
+[Service]
+ExecStart=/usr/local/sbin/webhook -hooks /etc/hooks/hooks.json -hotreload
+
+[Install]
+WantedBy=multi-user.target
