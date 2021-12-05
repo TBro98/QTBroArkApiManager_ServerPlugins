@@ -1,0 +1,7 @@
+[
+  {
+    "id": "deploy-webhook",
+    "execute-command": "/www/wwwroot/file.arkfgf.com/QTBroArkApiManager_ServerPlugins/git.sh",
+    "command-working-directory": "/www/wwwroot/file.arkfgf.com/QTBroArkApiManager_ServerPlugins"
+  }
+]
