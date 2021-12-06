@@ -1,0 +1,67 @@
+{
+	"NoFlyList":{
+		"Enabled": true,		
+		"SenderNameInChat": "No Fly List",
+		"ExcludeTheList": true,
+		"TheList":{
+			"Valguero": {
+				"Dinos": [
+					"Wyvern",
+					"Argent"
+				]
+			},
+			"ScorchedEarth": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Aberration": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Ragnarok": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Extinction": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Gen2": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"TheIsland": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"CrystalIsles": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Genesis": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"TheCenter": {
+				"Dinos": [
+					"Wyvern"
+				]
+			}		
+		},
+		"Messages":{
+			"GroupPermission":{
+				"Default": {
+					"UnableToFly": "Sorry but this dino is unable to fly"
+				}
+			}
+		}
+	}
+}

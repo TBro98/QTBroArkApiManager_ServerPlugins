@@ -263,6 +263,23 @@
             "MinApiVersion": 3.5,
             "Version": 1.66
         },
+        "NoFlyList": {
+            "ChineseName": "禁止特定恐龙飞行",
+            "Dependencies": [
+                "Permissions"
+            ],
+            "Description": "Easily configure what dinos you can fly",
+            "FileList": [
+                "config.json",
+                "NoFlyList.dll",
+                "NoFlyList.pdb",
+                "PluginInfo.json",
+                "PluginInfo.txt"
+            ],
+            "FullName": "NoFlyList",
+            "MinApiVersion": 3.0,
+            "Version": 1.0
+        },
         "NoMeshTeleporting": {
             "ChineseName": "禁止碰撞内传送防卡BUG",
             "Dependencies": [

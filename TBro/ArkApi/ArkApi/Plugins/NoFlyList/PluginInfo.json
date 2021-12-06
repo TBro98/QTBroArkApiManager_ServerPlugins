@@ -1,0 +1,10 @@
+{
+  "FullName": "NoFlyList",
+  "ChineseName": "禁止特定恐龙飞行",
+  "Description": "Easily configure what dinos you can fly",
+  "Version": 1.0,
+  "MinApiVersion": 3.0,
+  "Dependencies":[
+    "Permissions"
+  ]
+}

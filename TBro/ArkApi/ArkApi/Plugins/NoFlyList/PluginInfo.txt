@@ -1,0 +1,72 @@
+https://arkserverapi.com/index.php?resources/no-fly-list.286/
+一个简单的插件，可以控制哪个Dino将为您的群集中的任何地图飞行。除了Managarmr之外，对此插件的良好用途可以是禁用异常的所有传单。
+A simple plugin that controls which dino's will fly for any map in your cluster. A good use for this plugin could be to disable all flyers on Aberration except Managarmr's.
+
+JSON
+{
+	"NoFlyList":{
+		"Enabled": true,		   // enable the plugin
+		"SenderNameInChat": "No Fly List",  // the name in chat
+		"ExcludeTheList": true,    // if true then "TheList" is exclusion only. You CAN'T fly the dinos in the list. If false, them the list is Inclusion only and you can ONLY fly the dino's in the list.
+		"TheList":{
+			"Valguero": {    // map name
+				"Dinos": [
+					"Wyvern",   // dino list					
+					"Argent"
+				]
+			},
+			"ScorchedEarth": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Aberration": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Ragnarok": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Extinction": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Gen2": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"TheIsland": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"CrystalIsles": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"Genesis": {
+				"Dinos": [
+					"Wyvern"
+				]
+			},
+			"TheCenter": {
+				"Dinos": [
+					"Wyvern"
+				]
+			}		
+		},
+		"Messages":{
+			"GroupPermission":{
+				"Default": {
+					"UnableToFly": "Sorry but this dino is unable to fly"
+				}
+			}
+		}
+	}
+}
