@@ -429,6 +429,19 @@
             "MinApiVersion": 3.2,
             "Version": 2.5
         },
+        "TBroTekTurretCannon": {
+            "ChineseName": "TBro泰克炮伤害修改(可防溅射)",
+            "Description": "TBro TurretTek and Cannon Damage Change",
+            "FileList": [
+                "config.json",
+                "PluginInfo.json",
+                "PluginInfo.txt",
+                "TBroTekTurretCannon.dll"
+            ],
+            "FullName": "TBroTekTurretCannon",
+            "MinApiVersion": 3.1,
+            "Version": 1.3
+        },
         "Teleport": {
             "ChineseName": "互相传送",
             "Description": "Teleport Players, Dino's",

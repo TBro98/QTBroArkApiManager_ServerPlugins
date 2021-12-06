@@ -1,0 +1,14 @@
+{
+	"TekTurret":
+	{
+	"StructureDamage":0,
+	"DinoDamage":1,
+	"HumanDamage":1
+	},
+	"Cannon":
+	{
+	"StructureDamage":1,
+	"DinoDamage":1,
+	"HumanDamage":1
+	}	
+}

@@ -1,0 +1,18 @@
+{
+	"TekTurret":
+	{
+	"StructureDamage":0,		//泰克炮打建筑伤害，为0可防溅射
+	"DinoDamage":1,			//泰克炮打龙伤害倍数
+	"HumanDamage":1			//泰克炮打玩家伤害倍数
+	},
+	"Cannons":
+	{
+	"StructureDamage":0,		//火炮打建筑伤害
+	"DinoDamage":1,			//火炮打龙伤害倍数
+	"HumanDamage":1			//火炮打玩家伤害倍数
+	}	
+}
+
+
+命令
+TBroTekTurretCannons.reload	//重新加载配置
