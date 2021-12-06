@@ -1,3 +1,5 @@
+https://arkserverapi.com/index.php?resources/no-mesh-teleporting.281/
+
 {该插件通过以下方式攻击这两种漏洞：
 防止在传送器上方放置低天花板和悬崖平台。如果玩家想在传送器上方放置天花板，则它必须比 Mek 高。这样做的原因是因为放置在传送器上方的低天花板是用于将物体推入传送器下方网格的技术之一。传送器无法放置并且如果检测到其上方有天花板则无法工作。
 强制 结构要求以放置和使用传送器。这是为了防止将传送器 90% 塞入墙壁，然后使用它进入网格。
@@ -5,6 +7,14 @@
 使用传送器 (E) 时，仅执行基础和天花板要求。
 这个插件还会改变你服务器上游戏玩法的一些元素，让你更难住在真正的小老鼠洞里，部落现在必须在任何地方建造传送器/基地，这很可能会增加你服务器上的pvp。
 
+This plugin attacks both of those exploits by:
+Preventing low ceilings and cliff platforms from being placed above the teleporter. If a player wants to place a ceiling above a teleporter then it must be taller than a Mek (configurable with CeilingBuffer). The reason for this is because low ceilings placed above a teleporter is one of the techniques used to push objects into the mesh below the teleporter. The teleporter cannot be placed and will not work if ceilings are detected above it.
+Forcing structure requirements in order to place and also use the teleporter. This is to prevent stuffing the teleporter 90% into a wall and then use it to get into the mesh.
+It is recommended to require 85 foundations (basically a 10x10 foundation grid) at the very least. This is to ensure enough detection coverage to prevent the meshing exploits. If you go any smaller then could open the door for meshing exploits to happen.
+When using the teleporter (E), only the foundation and ceiling requirements are enforced.
+This plugin will also change a few elements of the gameplay on your server by making it harder to live in really small ratholes, and tribes will now have to build teleporter fob/bases everywhere which will mostly likely increase pvp on your server.
+
+json
 {
     "NoMeshTeleporting":{
         "Enabled": true,  // enables the plugin

@@ -264,7 +264,7 @@
             "Version": 1.66
         },
         "NoMeshTeleporting": {
-            "ChineseName": "无网状传送防卡BUG",
+            "ChineseName": "禁止碰撞内传送防卡BUG",
             "Dependencies": [
                 "Permissions"
             ],

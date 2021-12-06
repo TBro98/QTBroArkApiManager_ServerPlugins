@@ -1,6 +1,6 @@
 {
   "FullName": "NoMeshTeleporting",
-  "ChineseName": "无网状传送防卡BUG",
+  "ChineseName": "禁止碰撞内传送防卡BUG",
   "Description": "Stop teleporter meshing",
   "Version": 1.0,
   "MinApiVersion": 3.0,
