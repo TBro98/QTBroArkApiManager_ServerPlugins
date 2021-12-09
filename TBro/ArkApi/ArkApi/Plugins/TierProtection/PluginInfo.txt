@@ -1,5 +1,41 @@
+https://arkserverapi.com/index.php?resources/tier-protection.270
 Join the jraServerAPI Discord Server!
 https://discord.gg/TFSY7fEqT7
+
+##What's new in version 1.31
+hotfix for a logic error discovered when evaluating tribe ids. No other changes.
+版本1.31中的新增功能
+在评估部落ID时发现的逻辑错误的修补程序。没有其他改变。
+
+##What's new in version 1.3
+Added full cluster support with MySQL integration
+Fixed bug with the NPC in Genesis missions being protected in Thatch tier :ROFLMAO:
+Fixed bug with tribes tiering up and "resetting" the lower attack overrides, when EnableLowToAttackHigh=true. Now when lower tiers attack higher tiers, the two tribes can battle anytime thereafter.
+Added NewTierProtectionDurationInDays - this temporary protection you get once you have tiered up. This is to protect you from immediate attacks from any tribes that may have been waiting to attack you the moment you tier up. New tier protection also protects you from lower tier attacks.
+Added ProtectedTribeIds to configure full time protection for admin stuff etc..
+Improved performance overall.
+
+The config file has been updated.
+Also if you are not going to use MySQL then you should remove your database files, because the database schema has changed.
+版本1.3中的新功能
+
+使用MySQL Integration添加完整的群集支持
+
+固定在Genesis任务中的NPC中的错误被保护在茅草层中
+
+修复了带有部落的错误分层和“重置”较低攻击覆盖，当EnableLowtoAttackhigh = True时。现在，当较低的层次攻击更高的层时，两条部落可以随时争斗。
+
+添加了newtierprotectionDurationIndays - 这次临时保护一旦您入分层。这是为了保护您免受任何可能一直在等待攻击您的部落的立即攻击。新的层保护还可以保护您免受较低的层次攻击。
+
+添加了ProtectedTribeIds以配置管理员的全日制保护等。
+
+完全提高性能。
+
+配置文件已更新。
+
+此外，如果您不会使用MySQL，那么您应该删除数据库文件，因为数据库模式已更改。
+
+
 
 Provides continuous Player/Tribe structure protection by Tier.
 Tier is determined by what engrams have been unlocked by all players in the tribe.
@@ -54,100 +90,137 @@ Configuration:
 Spoiler: config.json
 JSON:
 {
-  "TieringProtection": {
-    "Enabled": true,
-    "IgnoreAdmin": true,     // ignore admins, set to false if you wish to test Tier Protection as an admin
-    "DiscordWebHookURL": "",  // the private discord channel to send messages to
-    "EnableLowToAttackHigh": true,   // enable low tier to attack higher tier
-    "LowAttackHighWarningCount": 5,  // number of warnings before low tier becomes the tier they are attacking
-    "AllowDemolitionAttack":  true,  // if the structure can be demolished , then allow the player to damage it and ignore Tier Protection rules
-    "AllowAttackOnDecayDayNumber": 8, // the number of days of decay time allowed before Tier Protection is ignored, on day 8, protection is removed
-    "WarningResetCooldown": 10,      // number of seconds before warning counter resets
-    "PlayerUpdateIntervalInMins": 5, // how often to update the database
-    "MessageIntervalInSecs": 5,      // how long the warning message displays for
-    "MessageTextSize": 1.4,
-    "MessageDisplayDelay": 10,       // how long to wait before next message
-    "MessageColor": [
-      1.0,
-      0.0,
-      0.0,
-      0.0
-    ],
-    "StructureExemptions": [   // structures to ignore from Tier Protection rules
-        "FenceFoundation",
-        "FenceSupport"
-    ],
+	"TieringProtection": {
+		"Mysql": {
+			"UseMysql": false,      
+			"MysqlHost": "localhost",
+			"MysqlUser": "XXXXXXXXX",
+			"MysqlPass": "XXXXXXXXX",
+			"MysqlDB": "tier_protection"
+		},
+		"DiscordWebHookURL": "",  // the private discord channel to send messages to
+		"Enabled": true,
+		"IgnoreAdmin": true,     // ignore admins, set to false if you wish to test Tier Protection as an admin
+		
+		"EnableLowToAttackHigh": true,   // enable low tier to attack higher tier
+		"LowAttackHighWarningCount": 2,  // number of warnings before low tier becomes the tier they are attacking
+        "IgnoreDamageUntilAfterWarningCount": true, // if false, then damage will be allowed during warning period (and could enter base without violation depending on build)
 
-    // dont change these trigger setting unless you know what you are doing :)
-    // ----------------------------------------------------------------------------
-    // to trigger Stone Tier the player must have ALL of these engrams unlocked
-    "StoneTierTriggerBP": [
-        "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Stone/PrimalItemStructure_StoneFloor.PrimalItemStructure_StoneFloor'"
-    ],
+		"AllowDemolitionAttack":  true,  // if the structure can be demolished, then allow the player to damage it and ignore Tier Protection rules
+		"AllowDecayAttack": true,        // allow the players to ignore Tier Protection rules on structures that have decayed at least AllowAttackOnDecayDayNumber days
+		"AllowAttackOnDecayDayNumber": 8, // the number of days of decay time allowed before Tier Protection is ignored, on day 8, protection is removed
+		
+		"PlayerUpdateIntervalInMins": 2, // how often to update the database, (db calls are threaded, so there shouldnt be too much lag)
+		"WarningResetCooldown": 30,      // number of seconds before warning counter resets
+		
+		"ProtectedTribeIds": [
+			"1111111111111111",
+			"1111111111111111"
+		],
+		
+		"MessageIntervalInSecs": 5,      // how long the warning message displays for
+		"MessageTextSize": 1.4,
+		"MessageDisplayDelay": 10,       // how long to wait before next message
+		"MessageColor": [
+			1.0,
+			0.0,
+			0.0,
+			0.0
+		],  	    
+		
+		"StructureExemptions": [   // stuctures to ignore from Tier Protection rules
+			"FenceFoundation",
+			"FenceSupport",
+            "SleepingBag"
+		],
 
-    // to trigger Metal Tier the player must have ALL of these engrams unlocked
-    "MetalTierTriggerBP": [
-        "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalFloor.PrimalItemStructure_MetalFloor'"
-    ],
+		// dont change these TierTrigger setting unless you know what you are doing :)	
+		// ----------------------------------------------------------------------------
+		// to trigger Stone Tier the player must have ALL of these engrams unlocked
+		"StoneTierTriggerBP": [
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Stone/PrimalItemStructure_StoneFloor.PrimalItemStructure_StoneFloor'"
+		],
 
-    // to trigger Partial-Tek the player must have ONE of these engrams unlocked
-    // to trigger Full-Tek Tier the player must have ALL of these engrams unlocked
-    "TekTierTriggerBP": [
-      "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekReplicator.PrimalItemStructure_TekReplicator'",
-      "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TurretTek.PrimalItemStructure_TurretTek'",
-      "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekShield.PrimalItemStructure_TekShield'"
-    ],
+		// to trigger Metal Tier the player must have ALL of these engrams unlocked
+		"MetalTierTriggerBP": [
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Metal/PrimalItemStructure_MetalFloor.PrimalItemStructure_MetalFloor'"
+		],
 
-    // the amount of days a tribe is protected in the tier they are in
-    "MaxTierProtectionDurationInDays": {
-        "Enabled": true,    // disable and players are protected all the time
-        "Thatch": 5,           // players are only protected for 5 days in Thatch tier
-        "Stone": 10,
-        "Metal": 20,
-        "PartialTek": 30
-    },
-
-    // New Messaging config allows for multi language support.
-    // In the example below you could add a Spanish group to Permissions and anyone with that group will see the messages in Spanish
-    "Messages":{
-        "Groups":{           
-            "Default": {
-                "SenderNameInChat": "TIER PROTECTION",
-                "Warning": "Warning",
-                "LastWarning": "LAST WARNING",
-                "HigherAttackingLowerMessage": "You cannot attack a lower tier tribe ({} vs {})",
-                "LowerAttackingHigherMessage": "You cannot attack a higher tier tribe ({} vs {})",
-                "LowerAttackingHigherWarning": "You are attacking a higher tier tribe ({} vs {}). If you continue to attack them you WILL LOSE your Tiering PROTECTION and they CAN attack you back.",
-                "LowerMarkedHigherMessage": "You are now marked as {} tier against this tribe and they can attack you back now. Good luck!",
-                "DiscordMessage": "Tribe: {} ({}) was tier: {} and is now tier: {} against Tribe: {} ({})",
-                "TimeRemainingInTierMessage": "Your {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
-                "TierStatusMessage": "You are currently {} tier",
-                "LabelTier1": "Thatch",
-                "LabelTier2": "Stone",
-                "LabelTier3": "Metal",
-                "LabelTier4": "Partial-Tek",
-                "LabelTier5": "Full-Tek"
-            },
-            "Spanish": {
-                "SenderNameInChat": "PROTECCIÓN DE NIVELES",
-                "Warning": "Advertencia",
-                "LastWarning": "ÚLTIMA ADVERTENCIA",
-                "HigherAttackingLowerMessage": "No puedes atacar a una tribu de nivel inferior ({} vs {})",
-                "LowerAttackingHigherMessage": "No puedes atacar a una tribu de nivel superior ({} vs {})",
-                "LowerAttackingHigherWarning": "Estás atacando a una tribu de nivel superior ({} vs {}). Si continúas atacándolos, PERDERÁS TU PROTECCIÓN DE NIVEL y ELLOS PUEDEN atacarte de nuevo.",
-                "LowerMarkedHigherMessage": "Ahora estás marcado como nivel {} contra esta tribu y ahora pueden atacarte.¡Buena suerte!",
-                "DiscordMessage": "Tribu: {} ({}) era nivel: {} y ahora es nivel: {} contra Tribu: {} ({})",
-                "TimeRemainingInTierMessage": "Su {} nivel de protección vence en: {} Día (s) {} Hora (s) {} Minuto (s)",
-                "TierStatusMessage": "Actualmente es el nivel {}",
-                "LabelTier1": "Thatch",
-                "LabelTier2": "Stone",
-                "LabelTier3": "Metal",
-                "LabelTier4": "Partial-Tek",
-                "LabelTier5": "Full-Tek"
-            }
-        }
-     }
-  }
+		// to trigger Partial-Tek the player must have ONE of these engrams unlocked
+		// to trigger Full-Tek Tier the player must have ALL of these engrams unlocked
+		"TekTierTriggerBP": [
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekReplicator.PrimalItemStructure_TekReplicator'",
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TurretTek.PrimalItemStructure_TurretTek'",
+			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekShield.PrimalItemStructure_TekShield'"
+		],
+		// the amount of days a tribe is protected once they hit a new tier, this is basically a little bit of protection from the same tiers that may have been waiting to attack
+		"NewTierProtectionDurationInDays": {
+			"Thatch": 0,
+			"Stone": 0,
+			"Metal": 1,
+			"PartialTek": 1,
+			"FullTek": 1
+		},
+		// the amount of days a tribe is protected from higher tiers
+		"MaxTierProtectionDurationInDays": {
+			"Thatch": 5,        // players are protected for 5 days in Thatch tier
+			"Stone": 10,
+			"Metal": 20,
+			"PartialTek": 30
+		},
+		// New Messaging config allows for multi language support. Please add a "Default" permission to the Default Permission Group in order for this to work. Otherwise you will see no messages.
+		// In the example below you could add a "Spanish" permission to any Permission Group and anyone within that group will see the messages in Spanish
+		"Messages":{
+			"GroupPermission":{
+				"Default": {
+					"SenderNameInChat": "TIER PROTECTION",
+					"Warning": "Warning",
+					"LastWarning": "LAST WARNING",
+					"HigherAttackingLowerMessage": "You cannot attack a lower tier tribe ({} vs {})",
+					"LowerAttackingHigherMessage": "You cannot attack a higher tier tribe ({} vs {})",
+					"LowerAttackingHigherWarning": "You are attacking a higher tier tribe ({} vs {}). If you continue to attack them you WILL LOSE your Tier PROTECTION and they CAN attack you back.",
+					"LowerNewTierAttackingHigherWarning": "You still have new tier protection. If you continue to attack you WILL LOSE your new tier protection and they CAN attack you back.",
+					"LowerNewTierMarkedHigherMessage": "You have lost your {} new tier protection against this tribe and they can attack you back now. Good luck!",
+					"LowerMarkedHigherMessage": "You are now marked as {} tier against this tribe and they can attack you back now. Good luck!",
+					"NewTierProtectionMessage": "This tribe is currently under {} new tier protection for {} Day(s) {} Hour(s) {} Minute(s) and cannot be attacked yet.",
+					"DiscordMessage": "Tribe: {} ({}) was tier: {} and is now tier: {} against Tribe: {} ({})",
+					"TimeRemainingInTierMessage": "Your overall {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
+					"TimeRemainingInNewTierMessage": "Your new {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
+					"CurrrentTierProtectionHasExpiredMessage": "Your currrent {} tier protection has expired.",
+					"TierStatusMessage": "You are currently {} tier",
+					"InactiveTribeSinceDBUpdate": "This tribe is currently protected because they have not logged into the map yet since the plugin was recently upgraded.",
+					"LabelTier1": "Thatch",
+					"LabelTier2": "Stone",
+					"LabelTier3": "Metal",
+					"LabelTier4": "Partial-Tek",
+					"LabelTier5": "Full-Tek"
+				},
+				"OtherLanguage": {
+					"SenderNameInChat": "TIER PROTECTION",
+					"Warning": "Warning",
+					"LastWarning": "LAST WARNING",
+					"HigherAttackingLowerMessage": "You cannot attack a lower tier tribe ({} vs {})",
+					"LowerAttackingHigherMessage": "You cannot attack a higher tier tribe ({} vs {})",
+					"LowerAttackingHigherWarning": "You are attacking a higher tier tribe ({} vs {}). If you continue to attack them you WILL LOSE your Tier PROTECTION and they CAN attack you back.",
+					"LowerNewTierAttackingHigherWarning": "You still have new tier protection. If you continue to attack you WILL LOSE your new tier protection and they CAN attack you back.",
+					"LowerNewTierMarkedHigherMessage": "You have lost your {} new tier protection against this tribe and they can attack you back now. Good luck!",
+					"LowerMarkedHigherMessage": "You are now marked as {} tier against this tribe and they can attack you back now. Good luck!",
+					"NewTierProtectionMessage": "This tribe is currently under {} new tier protection for {} Day(s) {} Hour(s) {} Minute(s) and cannot be attacked yet.",
+					"DiscordMessage": "Tribe: {} ({}) was tier: {} and is now tier: {} against Tribe: {} ({})",
+					"TimeRemainingInTierMessage": "Your overall {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
+					"TimeRemainingInNewTierMessage": "Your new {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
+					"CurrrentTierProtectionHasExpiredMessage": "Your currrent {} tier protection has expired.",
+					"TierStatusMessage": "You are currently {} tier",
+					"InactiveTribeSinceDBUpdate": "This tribe is currently protected because they have not logged into the map yet since the plugin was recently upgraded.",
+					"LabelTier1": "Thatch",
+					"LabelTier2": "Stone",
+					"LabelTier3": "Metal",
+					"LabelTier4": "Partial-Tek",
+					"LabelTier5": "Full-Tek"
+				}
+			}
+		}
+	}
 }
 
 Commands
