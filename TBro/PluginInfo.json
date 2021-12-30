@@ -7,7 +7,7 @@
             "version.json",
             "version.pdb"
         ],
-        "Version": 3.53
+        "Version": 3.54
     },
     "PluginInfo": {
         "AZEventManager": {
@@ -110,13 +110,14 @@
             "FileList": [
                 "ArkShop.dll",
                 "ArkShop.pdb",
+                "Commented.json",
                 "config.json",
                 "PluginInfo.json"
             ],
             "FullName": "Ark Shop",
-            "MinApiVersion": 3.0,
+            "MinApiVersion": 3.5,
             "ResourceId": 14,
-            "Version": 2.8
+            "Version": 3.01
         },
         "ArkShop(Chinese)": {
             "ChineseName": "高级商店(TBro)",
@@ -137,6 +138,21 @@
             "MinApiVersion": 3.5,
             "ResourceId": 14,
             "Version": 2.903
+        },
+        "ArkShopUI": {
+            "ChineseName": "可视化商店接口",
+            "Dependencies": [
+                "ArkShop",
+                "Permissions"
+            ],
+            "Description": "ArkShopUI requires ArkShop 3.01+",
+            "FileList": [
+                "ArkShopUI.dll",
+                "PluginInfo.json"
+            ],
+            "FullName": "ArkShopUI",
+            "MinApiVersion": 3.5,
+            "Version": 1.01
         },
         "ChatIcons": {
             "ChineseName": "本地聊天图标",

@@ -2,8 +2,8 @@
   "FullName":"Ark Shop",
   "ChineseName": "原版商店",
   "Description":"Shop, Currency & Kits",
-  "Version":2.8,
-  "MinApiVersion":3.0,
+  "Version":3.01,
+  "MinApiVersion":3.5,
   "ResourceId":14,
   "Dependencies":[
     "Permissions"
