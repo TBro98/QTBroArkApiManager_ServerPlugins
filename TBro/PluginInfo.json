@@ -119,6 +119,26 @@
             "ResourceId": 14,
             "Version": 3.01
         },
+        "ArkShop(Chinese)": {
+            "ChineseName": "高级商店(TBro)",
+            "Dependencies": [
+                "Permissions"
+            ],
+            "Description": "TBro-Shop, Currency & Kits",
+            "FileList": [
+                "ArkShop.dll",
+                "ArkShop.pdb",
+                "config.json",
+                "config示例.json",
+                "ExcludeEngrams.txt",
+                "PluginInfo.json",
+                "PluginInfo.txt"
+            ],
+            "FullName": "TBro Ark Shop(Chinese)",
+            "MinApiVersion": 3.5,
+            "ResourceId": 14,
+            "Version": 2.903
+        },
         "ArkShopUI": {
             "ChineseName": "可视化商店接口",
             "Dependencies": [

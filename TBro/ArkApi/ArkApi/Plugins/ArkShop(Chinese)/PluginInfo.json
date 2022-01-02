@@ -1,0 +1,11 @@
+{
+  "FullName":"TBro Ark Shop(Chinese)",
+  "ChineseName": "高级商店(TBro)",
+  "Description":"TBro-Shop, Currency & Kits",
+  "Version":2.903,
+  "MinApiVersion":3.5,
+  "ResourceId":14,
+  "Dependencies":[
+    "Permissions"
+  ]
+}

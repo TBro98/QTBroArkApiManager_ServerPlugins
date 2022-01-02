@@ -1,0 +1,527 @@
+{
+    "General": {
+        "ChatBan": false,
+        "Color": [
+            0,
+            255,
+            0,
+            255
+        ],
+        "DaKaDelayTime": 24,
+        "DbPathOverride": "C:\\ArkShop.db",
+        "DefaultKit": "",
+        "ItemsPerPage": 15,
+        "KitsShowWithoutPermission": true,
+        "ShopDisplayTime": 15.0,
+        "ShopTextSize": 1.3,
+        "StartDay": 3,
+        "TimedPointsReward": {
+            "Enabled": true,
+            "Groups": {
+                "Default": {
+                    "Add": 5,
+                    "Amount": 5,
+                    "DaKa_Max": 0,
+                    "DaKa_Min": 0,
+                    "Sale": 100,
+                    "VIPDaKa_Max": 0,
+                    "VIPDaKa_Min": 0
+                },
+                "vip1": {
+                    "Add": 5,
+                    "Amount": 10,
+                    "DaKa_Max": 0,
+                    "DaKa_Min": 0,
+                    "Sale": 95,
+                    "VIPDaKa_Max": 0,
+                    "VIPDaKa_Min": 0
+                }
+            },
+            "Interval": 5
+        },
+        "UnlockLevel": 300,
+        "UseEndTime": false,
+        "VIPDaKaDelayTime": 24,
+        "tbro": 0,
+        "tbrokami": 0,
+        "tbroserver": true
+    },
+    "Invitation": {
+        "InvitationCodeUsed": "<RichColor Color=\"1, 0, 0, 1\">输入“/yqm <别人发你的邀请码>”  领取新人邀请金币</>",
+        "InviteCmd": "/邀请码",
+        "InviteCmd1": "/yqm",
+        "InviteCmd2": "/invitation",
+        "InvitePlayerPoints": 300,
+        "IsMyselfInvitationCode": "<RichColor Color=\"1, 0, 0, 1\">不能使用自己的邀请码！</>",
+        "IsUsedInvitationCode": "<RichColor Color=\"1, 0, 0, 1\">你已领取过新人邀请奖励请勿重复领取。可在商店界面查看你的邀请码邀请新玩家获得邀请玩家奖励。</>",
+        "NewPlayerInvitePoints": 300,
+        "Sender": "邀请奖励",
+        "UseInvitation": false,
+        "UsedInvitationCodeSuccess": "<RichColor Color=\"1, 0, 0, 1\">成功领取新人邀请奖励。</>"
+    },
+    "Kits": {
+        "id": {
+            "DefaultAmount": 1,
+            "Description": "金币礼包示例",
+            "Points": 666,
+            "Price": 0
+        },
+        "starter": {
+            "DefaultAmount": 2,
+            "Description": "复活礼包示例",
+            "Dinos": [
+                {
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/Dinos/Carno/Carno_Character_BP.Carno_Character_BP'",
+                    "Level": 10,
+                    "saddleblueprint": ""
+                }
+            ],
+            "Items": [
+                {
+                    "Amount": 1,
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Saddles/PrimalItemArmor_CarnoSaddle.PrimalItemArmor_CarnoSaddle'",
+                    "Fixed": true,
+                    "ForceBlueprint": false,
+                    "Quality": 0.0
+                }
+            ],
+            "OnlyFromSpawn": true,
+            "Price": 0
+        },
+        "tools": {
+            "DefaultAmount": 3,
+            "Description": "工具礼包示例",
+            "Items": [
+                {
+                    "Amount": 1,
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponPike.PrimalItem_WeaponPike'",
+                    "Fixed": true,
+                    "ForceBlueprint": false,
+                    "Quality": 0.0
+                },
+                {
+                    "Amount": 1,
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponStoneClub.PrimalItem_WeaponStoneClub'",
+                    "Fixed": true,
+                    "ForceBlueprint": false,
+                    "Quality": 0.0
+                }
+            ],
+            "Price": 0
+        },
+        "vip": {
+            "DefaultAmount": 1,
+            "Description": "vip专属礼包示例",
+            "Dinos": [
+                {
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/Dinos/Ptero/Ptero_Character_BP.Ptero_Character_BP'",
+                    "Level": 20,
+                    "Neutered": true,
+                    "saddleblueprint": ""
+                }
+            ],
+            "Permissions": "vip1",
+            "Price": 0
+        }
+    },
+    "Lottery": {
+        "Color": [
+            255,
+            255,
+            0,
+            255
+        ],
+        "EnableLottery": false,
+        "EnableNotice": true,
+        "ExperienceGiveToDino": true,
+        "GetLottery": "<RichColor Color=\"1, 0, 0, 1\">获得奖品：{}</>",
+        "LotteryCmd": "/抽奖",
+        "LotteryCmd1": "/cj",
+        "LotteryCmd2": "/lottery",
+        "LotteryNotice": "玩家{0}抽奖获得{1}",
+        "LotteryPoints": 300,
+        "NotLotteryList": "",
+        "Sender": "抽奖"
+    },
+    "Messages": {
+        "AvailableKits": "您可领取到的礼包",
+        "BadLevel": "<RichColor Color=\"0,225,225,1\">需要的等级: {0} - {9}</>",
+        "BoughtBeacon": "<RichColor Color=\"0,225,225,1\">购买成功扣除{}金币</>",
+        "BoughtDino": "<RichColor Color=\"0,225,225,1\">购买成功扣除{}金币</>",
+        "BoughtExp": "<RichColor Color=\"0,225,225,1\">购买成功扣除{}金币</>",
+        "BoughtItem": "<RichColor Color=\"0,225,225,1\">购买成功扣除{}金币</>",
+        "BoughtKit": "<RichColor Color=\"0,225,225,1\">您已经成功地购买了 {0} 物品</>",
+        "BuyCmd": "/购买",
+        "BuyCmd1": "/gm",
+        "BuyCmd2": "/buy",
+        "BuyKitCmd": "/购买礼包",
+        "BuyKitCmd1": "/gmlb",
+        "BuyKitCmd2": "/buykit",
+        "BuyKitUsage": "<RichColor Color=\"0,225,225,1\">购买礼包说明: /领取 礼包ID</>",
+        "BuyUsage": "<RichColor Color=\"0,225,225,1\">使用说明: /购买 ID</>",
+        "CantBuyKit": "<RichColor Color=\"0,225,225,1\">你不能领取买这个礼包</>\"",
+        "CantGivePoints": "<RichColor Color=\"0,225,225,1\">你不能给自己积分</>",
+        "ChatBan": "cnm 操你妈 草泥马",
+        "DaKaCmd": "/打卡",
+        "DaKaCmd1": "/DK",
+        "DaKaCmd2": "/clock",
+        "FoundMorePlayers": "<RichColor Color=\"0,225,225,1\">找到了多个具有指定名称的玩家</>",
+        "GotPoints": "<RichColor Color=\"0,225,225,1\">您从{1}收到了{0}金币</>",
+        "HavePoints": "<RichColor Color=\"0,225,225,1\">您有 {0} 金币</>",
+        "HelpCmd": "/帮助",
+        "HelpCmd1": "/bz",
+        "HelpCmd2": "/help",
+        "HelpMessage": "----------------使用帮助----------------\n ----------------arkfgf.com 方舟非官方交流网提供技术支持----------------",
+        "KitCmd": "/礼包",
+        "KitCmd1": "/lb",
+        "KitCmd2": "/kit",
+        "KitUsage": "<RichColor Color=\"0,225,225,1\">礼包使用说明: /礼包 礼包ID</>",
+        "KitsLeft": "<RichColor Color=\"0,225,225,1\">你剩下{0}个{1}礼包</>",
+        "KitsListFormat": "\"礼包ID {0}\" - {1}. {2} 剩余. {3}\n",
+        "KitsListPrice": "价格: {0}",
+        "NoKits": "没有可用的礼包",
+        "NoKitsLeft": "<RichColor Color=\"0,225,225,1\">您没有剩余{0}个礼包</>",
+        "NoPermissionsKit": "<RichColor Color=\"0,225,225,1\">你没有领取这个礼包的权力</>",
+        "NoPlayer": "<RichColor Color=\"0,225,225,1\">玩家不存在</>",
+        "NoPoints": "<RichColor Color=\"0,225,225,1\">你没有足够的金币了</>",
+        "OnlyOnSpawnKit": "无法领取该礼包",
+        "PointsCmd": "/金币",
+        "PointsCmd1": "/jb",
+        "PointsCmd2": "/points",
+        "ReceivedPoints": "<RichColor Color=\"0,225,225,1\">您已收到 {0}金币!(总计: {1})</>",
+        "ReceivedwekendPoints": "<RichColor Color=\"0,225,225,1\">您已收到 {0}周末金币,在原有的{2}上增加{3}!(总计: {1})</>",
+        "RidingDino": "<RichColor Color=\"0,225,225,1\">骑乘时不能买这个物品</>",
+        "SellCmd": "/出售",
+        "SellCmd1": "/cs",
+        "SellCmd2": "/sell",
+        "Sender": "arkfgf.com",
+        "SentPoints": "<RichColor Color=\"0,225,225,1\">您成功地将 {0} 金币发送到 {1}</>",
+        "ShopCmd": "/商店",
+        "ShopCmd1": "/sd",
+        "ShopCmd2": "/shop",
+        "ShopMessage": "使用说明: 翻页命令--/商店 页码 购买命令--/购买 商品ID\n 服务器QQ群：\n 当前为商店第{0}页，商店总共有{1}页\n ----------------方舟非官方交流网 arkfgf.com----------------\n",
+        "ShopSellCmd": "/商品出售",
+        "ShopSellCmd1": "/spcs",
+        "ShopSellCmd2": "/shopsell",
+        "ShopUsage": "<RichColor Color=\"0,225,225,1\">使用说明: /商店 页数</>",
+        "StoreListDino": "({0}) ID: {3} . {1} . 等级: {2} .  价格: {4}\n",
+        "StoreListFormat": "----------------商品列表----------------\n {0}\n 你的金币：{1}   你的vip：{2}\n 你的steamid：{3}\n 你的邀请码：{4}   已邀请玩家数：{5}\n 点卡到期时间：{6}\n ----------------arkfgf.com 方舟非官方交流网提供技术支持----------------\n",
+        "StoreListItem": "({0}) ID: {2} . {1} .  售价: {3}\n",
+        "TradeCmd": "/转账",
+        "TradeCmd1": "/zz",
+        "TradeCmd2": "/trade",
+        "TradeUsage": "<RichColor Color=\"0,225,225,1\">转账使用:/转账 '玩家名' 金币数量</>",
+        "WrongId": "<RichColor Color=\"0,225,225,1\">错误的商品 ID</>",
+        "tradeservice": 0
+    },
+    "Mysql": {
+        "MysqlDB": "apitest",
+        "MysqlHost": "localhost",
+        "MysqlPass": "12345",
+        "MysqlUser": "apitest",
+        "UseMysql": false
+    },
+    "SellItems": {
+        "cs1": {
+            "Amount": 100,
+            "Blueprint": "Blueprint'/Game/Mods/Stack50/Resources/PrimalItemResource_Stone_Child.PrimalItemResource_Stone_Child'",
+            "Description": "出售物品1",
+            "Price": 10,
+            "Type": "item"
+        },
+        "cs2": {
+            "Amount": 100,
+            "Blueprint": "Blueprint'/Game/Mods/Stack50/Resources/PrimalItemResource_Stone_Child.PrimalItemResource_Stone_Child'",
+            "Description": "出售物品2",
+            "Price": 10,
+            "Type": "item"
+        }
+    },
+    "ShopItems": {
+        "id1": {
+            "Description": "购买物品",
+            "Items": [
+                {
+                    "Amount": 100,
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_MetalIngot.PrimalItemResource_MetalIngot'",
+                    "Fixed": true,
+                    "ForceBlueprint": false,
+                    "Quality": 0.0
+                }
+            ],
+            "Price": 15,
+            "Type": "item"
+        },
+        "id10": {
+            "Blueprint": "蓝图代码",
+            "Description": "购买恐龙带鞍",
+            "Level": 225,
+            "Price": 100,
+            "Type": "dino",
+            "saddleblueprint": "鞍的代码"
+        },
+        "id11": {
+            "Blueprint": "蓝图代码",
+            "Description": "购买恐龙与低温仓中",
+            "Level": 225,
+            "Price": 100,
+            "Type": "dino",
+            "bIsCryopdos": true,
+            "saddleblueprint": ""
+        },
+        "id2": {
+            "Description": "购买2物品",
+            "Items": [
+                {
+                    "Amount": 1,
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalHatchet.PrimalItem_WeaponMetalHatchet'",
+                    "Fixed": true,
+                    "ForceBlueprint": false,
+                    "Quality": 0.0
+                },
+                {
+                    "Amount": 1,
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalPick.PrimalItem_WeaponMetalPick'",
+                    "Fixed": true,
+                    "ForceBlueprint": false,
+                    "Quality": 0.0
+                }
+            ],
+            "MaxAmount": 99,
+            "Price": 5,
+            "Type": "item"
+        },
+        "id3": {
+            "Blueprint": "Blueprint'/Game/PrimalEarth/Dinos/Para/Para_Character_BP.Para_Character_BP'",
+            "Description": "购买固定血量的恐龙",
+            "HealthBase": 45.0,
+            "Level": 10,
+            "Price": 20,
+            "Type": "dino",
+            "saddleblueprint": ""
+        },
+        "id4": {
+            "Blueprint": "Blueprint'/Game/PrimalEarth/Dinos/Carno/Carno_Character_BP.Carno_Character_BP'",
+            "Description": "购买恐龙附带物品",
+            "Items": [
+                {
+                    "Amount": 1,
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponPike.PrimalItem_WeaponPike'",
+                    "Fixed": true,
+                    "ForceBlueprint": false,
+                    "Quality": 0.0
+                }
+            ],
+            "Level": 15,
+            "Neutered": true,
+            "Price": 50,
+            "Type": "dino",
+            "saddleblueprint": ""
+        },
+        "id5": {
+            "ClassName": "SupplyCrate_Level25_Double_C",
+            "Description": "宝箱光柱1",
+            "Price": 100,
+            "Type": "beacon"
+        },
+        "id6": {
+            "ClassName": "ArtifactCrate_2_C",
+            "Description": "宝箱光柱2",
+            "Price": 100,
+            "Type": "beacon"
+        },
+        "id7": {
+            "Amount": 1000.0,
+            "Description": "购买经验",
+            "GiveToDino": false,
+            "Price": 55,
+            "Type": "experience"
+        },
+        "id8": {
+            "Description": "泰克解锁",
+            "Items": [
+                {
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/TEK/PrimalItemArmor_TekBoots.PrimalItemArmor_TekBoots'"
+                },
+                {
+                    "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/TEK/PrimalItemArmor_TekGloves.PrimalItemArmor_TekGloves'"
+                }
+            ],
+            "Price": 20,
+            "Type": "unlockengram"
+        },
+        "id9": {
+            "Description": "命令",
+            "Items": [
+                {
+                    "Command": "GiveEngrams"
+                }
+            ],
+            "Price": 1000,
+            "Type": "command"
+        }
+    },
+    "Suicide": {
+        "CanSuicideWhileKnockedOut": false,
+        "CanSuicideWhilePickedUP": false,
+        "CanSuicideWithHandCuffs": false,
+        "MsgAlreadyDead": "<RichColor Color=\"1, 0, 0, 1\">已经死了不能自杀。</>",
+        "MsgDead": "<RichColor Color=\"1, 0, 0, 1\">自杀并扣除{}金币.</>",
+        "MsgHandcuffs": "<RichColor Color=\"1, 0, 0, 1\">戴上手铐无法自杀。</>",
+        "MsgOnDino": "<RichColor Color=\"1, 0, 0, 1\">请下龙来使用自杀。</>",
+        "MsgPickedUP": "<RichColor Color=\"1, 0, 0, 1\">捡起恐龙时无法自杀！</>",
+        "MsgSitting": "<RichColor Color=\"1, 0, 0, 1\">在坐着时不能使用自杀命令。</>",
+        "MsgUnconscious": "<RichColor Color=\"1, 0, 0, 1\">不能在昏迷时自杀。</>",
+        "Sender": "自杀",
+        "SuicideCMD": "/自杀",
+        "SuicideCMD1": "/zs",
+        "SuicideCMD2": "/suicide",
+        "SuicidePoints": 0,
+        "SuicideRequiresPermission": false
+    },
+    "kami": {
+        "Kits": {
+            "kamiid1": {
+                "Dinos": [
+                    {
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/Dinos/Griffin/Griffin_Character_BP.Griffin_Character_BP'",
+                        "Level": 225,
+                        "saddleblueprint": ""
+                    }
+                ],
+                "Items": [
+                    {
+                        "Amount": 1,
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalShirt.PrimalItemArmor_MetalShirt'",
+                        "Fixed": true,
+                        "ForceBlueprint": false,
+                        "Quality": 10.0
+                    },
+                    {
+                        "Amount": 1,
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalGloves.PrimalItemArmor_MetalGloves'",
+                        "Fixed": true,
+                        "ForceBlueprint": false,
+                        "Quality": 10.0
+                    },
+                    {
+                        "Amount": 1,
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalPants.PrimalItemArmor_MetalPants'",
+                        "Fixed": true,
+                        "ForceBlueprint": false,
+                        "Quality": 10.0
+                    },
+                    {
+                        "Amount": 1,
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalBoots.PrimalItemArmor_MetalBoots''",
+                        "Fixed": true,
+                        "ForceBlueprint": false,
+                        "Quality": 10.0
+                    },
+                    {
+                        "Amount": 1,
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Metal/PrimalItemArmor_MetalHelmet.PrimalItemArmor_MetalHelmet'",
+                        "Fixed": true,
+                        "ForceBlueprint": false,
+                        "Quality": 10.0
+                    },
+                    {
+                        "Amount": 1,
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalHatchet.PrimalItem_WeaponMetalHatchet'",
+                        "Fixed": true,
+                        "ForceBlueprint": false,
+                        "Quality": 1.0
+                    },
+                    {
+                        "Amount": 1,
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalPick.PrimalItem_WeaponMetalPick'",
+                        "Fixed": true,
+                        "ForceBlueprint": false,
+                        "Quality": 1.0
+                    },
+                    {
+                        "Amount": 1,
+                        "Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponSickle.PrimalItem_WeaponSickle'",
+                        "Fixed": true,
+                        "ForceBlueprint": false,
+                        "Quality": 1.0
+                    }
+                ]
+            }
+        },
+        "havevipmessage": "你已经是{}会员不能充值",
+        "kamiCmd": "/cz",
+        "kamiCmd1": "/充值",
+        "kamiCmd2": "/recharge",
+        "kamiPathOverride": "C:\\kami.db",
+        "kamilogpath": "C:\\kami.txt",
+        "nokami": "没有卡密",
+        "pointsmessage": "成功充值{}金币",
+        "vipmessage": "你成功充值{}会员",
+        "vippointsmessage": "成功充值{}点券"
+    },
+    "vipMessages": {
+        "BoughtBeacon": "<RichColor Color=\"0,225,225,1\">购买成功扣除{}点券</>",
+        "BoughtDino": "<RichColor Color=\"0,225,225,1\">购买成功扣除{}点券</>",
+        "BoughtExp": "<RichColor Color=\"0,225,225,1\">购买成功扣除{}点券</>",
+        "BoughtItem": "<RichColor Color=\"0,225,225,1\">购买成功扣除{}点券</>",
+        "BuyUsage": "<RichColor Color=\"0,225,225,1\">使用说明: /购买 ID</>",
+        "HavePoints": "<RichColor Color=\"0,225,225,1\">您有 {0} 点券</>",
+        "NoPoints": "<RichColor Color=\"0,225,225,1\">你没有足够的点券了</>",
+        "NoVip": "<RichColor Color=\"0,225,225,1\">没有领取权限</>",
+        "PointsCmd": "/点劵",
+        "PointsCmd1": "/dq",
+        "PointsCmd2": "/vippoints",
+        "ReceivedPoints": "<RichColor Color=\"0,225,225,1\">您已收到 {0}点券!(总计: {1})</>",
+        "RidingDino": "<RichColor Color=\"0,225,225,1\">骑乘时不能买这个物品</>",
+        "SellCmd": "/出售点券",
+        "SellCmd1": "/csdq",
+        "SellCmd2": "/vipsell",
+        "Sender": "arkfgf",
+        "ShopCmd": "/会员商店",
+        "ShopCmd1": "/vsd",
+        "ShopCmd2": "/vipshop",
+        "ShopMessage": "使用说明: 翻页命令--/商店 页码 购买命令--/购买 商品ID\n 服务器QQ群：\n当前为商店第{0}页，商店总共有{1}页\n ----------------方舟非官方交流网 arkfgf.com----------------\n",
+        "ShopSellCmd": "/点券出售",
+        "ShopSellCmd1": "/dqcs",
+        "ShopSellCmd2": "/vipshopsell",
+        "ShopUsage": "----------------使用帮助----------------\n ----------------arkfgf.com 方舟非官方交流网提供技术支持----------------",
+        "StoreListDino": "({0}) ID: {3} . {1} . 等级: {2} .  价格: {4}\n",
+        "StoreListFormat": "----------------点劵商店----------------\n {0}\n 你的点卷：{1}  你的vip：{2}\n ----------------arkfgf.com 方舟非官方交流网提供技术支持----------------\n",
+        "StoreListItem": "({0}) ID: {2} . {1} .  售价: {3}\n",
+        "VIPDaKaCmd": "/VIP打卡",
+        "VIPDaKaCmd1": "/VIPDK",
+        "VIPDaKaCmd2": "/vipclock",
+        "exchangeCmd": "/兑换",
+        "exchangeCmd1": "/dh",
+        "exchangeCmd2": "/exchange",
+        "exchangeRatio": 100,
+        "exchangeSuccess": "兑换{1}点卷成{2}金币",
+        "exchangeUsage": "金币兑换比例：1：{1}",
+        "updatevip": "<RichColor Color=\"0,225,225,1\">成功升级vip</>"
+    },
+    "vipSellItems": {
+        "cs1": {
+            "Amount": 100,
+            "Blueprint": "Blueprint'/Game/Mods/Stack50/Resources/PrimalItemResource_Stone_Child.PrimalItemResource_Stone_Child'",
+            "Description": "出售物品1",
+            "Price": 10,
+            "Type": "item"
+        },
+        "cs2": {
+            "Amount": 100,
+            "Blueprint": "Blueprint'/Game/Mods/Stack50/Resources/PrimalItemResource_Stone_Child.PrimalItemResource_Stone_Child'",
+            "Description": "出售物品2",
+            "Price": 10,
+            "Type": "item"
+        }
+    },
+    "vipShopItems": {
+        "id": {
+            "Description": "v6升级成v7",
+            "Price": 100,
+            "Type": "vip",
+            "newvip": "vip7"
+        }
+    }
+}
