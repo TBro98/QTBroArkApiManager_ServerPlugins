@@ -1,0 +1,11 @@
+// [General Settings]
+EnableUnicodeTextNotifications=false					// Toggles whether in-game text notifications will support unicode characters to display certain texts properly, instead of "???" for example. You should only need to enable this if you play with a language that requires it.
+
+EnableHLNAAnyMap=true									// Toggles whether equipping the HLNA Skin item activates a fully functioning HLNA from the Genesis Maps instead of a mostly cosmetic version.
+EnableHLNACustomShop=true								// Toggles whether the HLNA Hexagon Shop will contain the Trade Options specified in the "HLNAShopList.txt" file.
+HLNAGreetHexagonGainAmount=300							// Determines how many Hexagons are given to the player upon interacting with HLNA to 'Say Hello'.
+EnableHLNACreatureDeepScan=true							// Toggles whether additional creature information will be displayed to players when using HLNA's creature scan ability.
+HLNACreatureDeepScanCooldown=10.0						// Determines how long HLNA's deep scan ability has to wait (in seconds) between each scan to display additional info about a creature.
+HLNACreatureDeepScanAllowWildStats=true					// Toggles whether HLNA's deep scan ability displays wild dino stats in its additional info.
+HLNACreatureDeepScanAllowEnemyStats=true				// Toggles whether HLNA's deep scan ability displays enemy dino stats in its additional info. May not work on enemy tames, as HLNA doesn't seem capable of scanning them by default.
+HLNACreatureDeepScanAllowAllyStats=true					// Toggles whether HLNA's deep scan ability displays friendly tamed dino stats in its additional info.

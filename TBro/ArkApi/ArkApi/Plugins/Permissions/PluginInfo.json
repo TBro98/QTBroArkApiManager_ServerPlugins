@@ -1,7 +1,7 @@
 {
   "FullName":"Permissions",
   "ChineseName": "会员分组权限",
-  "Description":"Manage permissions groups",
-  "Version":1.81,
-  "MinApiVersion":3.4
+  "Description":"(1.9 Beta 2) Manage permissions groups",
+  "Version":1.9,
+  "MinApiVersion":3.51
 }

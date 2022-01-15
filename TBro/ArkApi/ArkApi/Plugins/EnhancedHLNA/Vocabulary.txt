@@ -1,0 +1,14 @@
+// [Key Terms]
+KeyTerm_WordName="Name"
+KeyTerm_WordLevel="Level"
+KeyTerm_WordGender="Gender"
+KeyTerm_WordGenderMale="Male"
+KeyTerm_WordGenderFemale="Female"
+KeyTerm_WordGenderUnknown="Unknown"
+
+// [Pop-Up Notification Texts]
+Notification_HLNAScanExtraCreatureInfo_PassiveTameable="Tameable By Players Level:"
+Notification_HLNAScanExtraCreatureInfo_Tameable="Tameable"
+Notification_HLNAScanExtraCreatureInfo_UnTameable="Untameable"
+Notification_HLNAScanExtraCreatureInfo_BaseStatPoints="Base Stat Points"
+Notification_HLNAScanExtraCreatureInfo_TamedStatPoints="Tamed Stat Points"

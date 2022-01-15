@@ -2,7 +2,7 @@
   "FullName": "Tier Protection",
   "ChineseName":"Tier部落等级保护",
   "Description": "Gives continuous structure protection by Tier.",
-  "Version": 1.31,
+  "Version": 1.2,
   "MinApiVersion": 3.52,
   "Dependencies":[
     "Permissions"

@@ -152,7 +152,7 @@
             ],
             "FullName": "ArkShopUI",
             "MinApiVersion": 3.5,
-            "Version": 1.01
+            "Version": 1.02
         },
         "ChatIcons": {
             "ChineseName": "本地聊天图标",
@@ -194,6 +194,21 @@
             "FullName": "Dino colors",
             "MinApiVersion": 2.0,
             "Version": 1.1
+        },
+        "EnhancedHLNA": {
+            "ChineseName": "HLNA支持",
+            "Description": "Enhances HLNA with added functionality and more customization options.",
+            "FileList": [
+                "Config.txt",
+                "EnhancedHLNA.dll",
+                "EnhancedHLNA.pdb",
+                "HLNAShopList.txt",
+                "PluginInfo.json",
+                "Vocabulary.txt"
+            ],
+            "FullName": "Enhanced HLNA",
+            "MinApiVersion": 3.54,
+            "Version": 1.02
         },
         "ExtendedRcon": {
             "ChineseName": "RCON扩展命令",
@@ -342,7 +357,7 @@
         },
         "Permissions": {
             "ChineseName": "会员分组权限",
-            "Description": "Manage permissions groups",
+            "Description": "(1.9 Beta 2) Manage permissions groups",
             "FileList": [
                 "config.json",
                 "Permissions.dll",
@@ -351,8 +366,8 @@
                 "PluginInfo.txt"
             ],
             "FullName": "Permissions",
-            "MinApiVersion": 3.4,
-            "Version": 1.81
+            "MinApiVersion": 3.51,
+            "Version": 1.9
         },
         "PlayerList": {
             "ChineseName": "在线玩家列表",
@@ -497,6 +512,7 @@
             "Description": "Gives continuous structure protection by Tier.",
             "FileList": [
                 "config.json",
+                "config_commented.json",
                 "PluginInfo.json",
                 "PluginInfo.txt",
                 "TierProtection.dll",
@@ -504,7 +520,7 @@
             ],
             "FullName": "Tier Protection",
             "MinApiVersion": 3.52,
-            "Version": 1.31
+            "Version": 1.2
         },
         "UnicodeRcon": {
             "ChineseName": "后台RCON中文支持",

@@ -2,7 +2,7 @@
   "FullName": "ArkShopUI",
   "ChineseName": "可视化商店接口",
   "Description": "ArkShopUI requires ArkShop 3.01+",
-  "Version": 1.01,
+  "Version": 1.02,
   "MinApiVersion": 3.5,
   "Dependencies": [
     "ArkShop",

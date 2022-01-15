@@ -1,0 +1,7 @@
+{
+  "FullName":"Enhanced HLNA",
+  "ChineseName":"HLNA支持",
+  "Description":"Enhances HLNA with added functionality and more customization options.",
+  "Version":1.02,
+  "MinApiVersion":3.54
+}

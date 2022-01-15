@@ -1,30 +1,18 @@
 {  
 	"TierProtection": {
-		"Mysql": {
-			"UseMysql": false,
-			"MysqlHost": "localhost",
-			"MysqlUser": "XXXXXXXXX",
-			"MysqlPass": "XXXXXXXXX",
-			"MysqlDB": "tier_protection"
-		},
 		"DiscordWebHookURL": "",
 		"Enabled": true,
 		"IgnoreAdmin": true,
 
 		"EnableLowToAttackHigh": true,
-		"LowAttackHighWarningCount": 2,
-		"IgnoreDamageUntilAfterWarningCount": true,
+		"LowAttackHighWarningCount": 5,
 
-		"AllowDemolitionAttack":  true,
-		"AllowDecayAttack": true,		
+		"AllowDemolitionAttack":  true, 
 		"AllowAttackOnDecayDayNumber": 8,
 
-		"PlayerUpdateIntervalInMins": 2,        
+		"PlayerUpdateIntervalInMins": 5,        
 		"WarningResetCooldown": 30,
 
-		"ProtectedTribeIds": [
-		],
-		
 		"MessageIntervalInSecs": 5,
 		"MessageTextSize": 1.4,
 		"MessageDisplayDelay": 10,
@@ -37,8 +25,7 @@
 
 		"StructureExemptions": [
 			"FenceFoundation",
-			"FenceSupport",
-			"SleepingBag"
+			"FenceSupport"
 		],
 
 		"StoneTierTriggerBP": [
@@ -52,61 +39,43 @@
 			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TurretTek.PrimalItemStructure_TurretTek'",
 			"Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Structures/Misc/PrimalItemStructure_TekShield.PrimalItemStructure_TekShield'"
 		],
-		"NewTierProtectionDurationInDays": {
-			"Thatch": 0,
-			"Stone": 0,
-			"Metal": 1,
-			"PartialTek": 1,
-			"FullTek": 1
-		},
 		"MaxTierProtectionDurationInDays": {
+		    "Enabled": true,
 			"Thatch": 5,
 			"Stone": 10,
 			"Metal": 20,
 			"PartialTek": 30
 		},
 		"Messages":{
-			"GroupPermission":{
+			"Groups":{
 				"Default": {
 					"SenderNameInChat": "TIER PROTECTION",
 					"Warning": "Warning",
 					"LastWarning": "LAST WARNING",
 					"HigherAttackingLowerMessage": "You cannot attack a lower tier tribe ({} vs {})",
 					"LowerAttackingHigherMessage": "You cannot attack a higher tier tribe ({} vs {})",
-					"LowerAttackingHigherWarning": "You are attacking a higher tier tribe ({} vs {}). If you continue to attack them you WILL LOSE your Tier PROTECTION and they CAN attack you back.",
-					"LowerNewTierAttackingHigherWarning": "You still have new tier protection. If you continue to attack you WILL LOSE your new tier protection and they CAN attack you back.",
-					"LowerNewTierMarkedHigherMessage": "You have lost your {} new tier protection against this tribe and they can attack you back now. Good luck!",
+					"LowerAttackingHigherWarning": "You are attacking a higher tier tribe ({} vs {}). If you continue to attack them you WILL LOSE your Tiering PROTECTION and they CAN attack you back.",
 					"LowerMarkedHigherMessage": "You are now marked as {} tier against this tribe and they can attack you back now. Good luck!",
-					"NewTierProtectionMessage": "This tribe is currently under {} new tier protection for {} Day(s) {} Hour(s) {} Minute(s) and cannot be attacked yet.",
 					"DiscordMessage": "Tribe: {} ({}) was tier: {} and is now tier: {} against Tribe: {} ({})",
-					"TimeRemainingInTierMessage": "Your overall {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
-					"TimeRemainingInNewTierMessage": "Your new {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
-					"CurrrentTierProtectionHasExpiredMessage": "Your currrent {} tier protection has expired.",
+					"TimeRemainingInTierMessage": "Your {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
 					"TierStatusMessage": "You are currently {} tier",
-					"InactiveTribeSinceDBUpdate": "This tribe is currently protected because they have not logged into the map yet since the plugin was recently upgraded.",
 					"LabelTier1": "Thatch",
 					"LabelTier2": "Stone",
 					"LabelTier3": "Metal",
 					"LabelTier4": "Partial-Tek",
 					"LabelTier5": "Full-Tek"
 				},
-				"OtherLanguages": {
-					"SenderNameInChat": "TIER PROTECTION",
-					"Warning": "Warning",
-					"LastWarning": "LAST WARNING",
-					"HigherAttackingLowerMessage": "You cannot attack a lower tier tribe ({} vs {})",
-					"LowerAttackingHigherMessage": "You cannot attack a higher tier tribe ({} vs {})",
-					"LowerAttackingHigherWarning": "You are attacking a higher tier tribe ({} vs {}). If you continue to attack them you WILL LOSE your Tier PROTECTION and they CAN attack you back.",
-					"LowerNewTierAttackingHigherWarning": "You still have new tier protection. If you continue to attack you WILL LOSE your new tier protection and they CAN attack you back.",
-					"LowerNewTierMarkedHigherMessage": "You have lost your {} new tier protection against this tribe and they can attack you back now. Good luck!",
-					"LowerMarkedHigherMessage": "You are now marked as {} tier against this tribe and they can attack you back now. Good luck!",
-					"NewTierProtectionMessage": "This tribe is currently under {} new tier protection for {} Day(s) {} Hour(s) {} Minute(s) and cannot be attacked yet.",
-					"DiscordMessage": "Tribe: {} ({}) was tier: {} and is now tier: {} against Tribe: {} ({})",
-					"TimeRemainingInTierMessage": "Your overall {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
-					"TimeRemainingInNewTierMessage": "Your new {} tier protection expires in: {} Day(s) {} Hour(s) {} Minute(s)",
-					"CurrrentTierProtectionHasExpiredMessage": "Your currrent {} tier protection has expired.",
-					"TierStatusMessage": "You are currently {} tier",
-					"InactiveTribeSinceDBUpdate": "This tribe is currently protected because they have not logged into the map yet since the plugin was recently upgraded.",
+				"Spanish": {
+					"SenderNameInChat": "PROTECCIÓN DE NIVELES",
+					"Warning": "Advertencia",
+					"LastWarning": "ÚLTIMA ADVERTENCIA",
+					"HigherAttackingLowerMessage": "No puedes atacar a una tribu de nivel inferior ({} vs {})",
+					"LowerAttackingHigherMessage": "No puedes atacar a una tribu de nivel superior ({} vs {})",
+					"LowerAttackingHigherWarning": "Estás atacando a una tribu de nivel superior ({} vs {}). Si continúas atacándolos, PERDERÁS TU PROTECCIÓN DE NIVEL y ELLOS PUEDEN atacarte de nuevo.",
+					"LowerMarkedHigherMessage": "Ahora estás marcado como nivel {} contra esta tribu y ahora pueden atacarte.¡Buena suerte!",
+					"DiscordMessage": "Tribu: {} ({}) era nivel: {} y ahora es nivel: {} contra Tribu: {} ({})",
+					"TimeRemainingInTierMessage": "Su {} nivel de protección vence en: {} Día (s) {} Hora (s) {} Minuto (s)",
+					"TierStatusMessage": "Actualmente es el nivel {}",
 					"LabelTier1": "Thatch",
 					"LabelTier2": "Stone",
 					"LabelTier3": "Metal",
