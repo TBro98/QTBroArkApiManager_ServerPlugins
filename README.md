@@ -1,3 +1,7 @@
+# Pause updates！
+I will not maintain the project for the time being
+
+
 # ARK-Server-API
 ArkApi is a plugin which allows you to create your own server-side plugins for ARK using C++ language.
 
